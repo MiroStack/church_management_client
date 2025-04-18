@@ -78,10 +78,17 @@
     list-style: none;
     color: var(--white200);
 }
-.sidenav-wrap > ul > a{
+.sidenav-wrap > ul > li{
     cursor: pointer;
 }
 
+.sidenav-wrap > ul > li > a{
+    text-decoration: none;
+    color: var(--white200);
+}
+.sidenav-wrap > ul > li > a:hover{
+    color: var(--grey200);
+}
 .sidenav-wrap > hr{
     height: 2px;
     color: var(--grey200);
@@ -435,10 +442,14 @@ a.highlight-link{
     justify-items: start;
     list-style: none;
 }
-.quick-list > a{
+ul.quick-list > li{
     cursor: pointer;
 }
-.quick-list > a:hover{
+ul.quick-list > li >a{
+    text-decoration: none;
+    color: var(--grey200);
+}
+ul.quick-list > li > a:hover{
     color: var(--white200) !important;
 }
 .copyright-wrap{
