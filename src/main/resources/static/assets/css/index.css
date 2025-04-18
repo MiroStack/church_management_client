@@ -1,0 +1,5 @@
+.has-schedule a {
+    background-color: #4caf50 !important; /* green */
+    color: white !important;
+    font-weight: bold;
+}
