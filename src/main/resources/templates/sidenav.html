@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+   <div class="sidenav-wrap" th:fragment="sidenavigation">
+         <div class="closed-wrap">
+           <ion-icon class="closed-icon" name="close-outline"></ion-icon>
+         </div>
+     <ul>
+       <a href="/"><li>Home</li></a>
+       <a href="/about"><li>About Us</li></a>
+       <a href="/ministries"><li>Ministries</li></a>
+       <a href="/events"><li>Events</li></a>
+       <a href="/contact"><li>Contact</li></a>
+     </ul>
+     <hr>
+     <div class="sidenav-login">
+         <h3>Login</h3>
+         <button class="login-btn" >Login to your account</button>
+     </div>
+   </div>
+
+</body>
+</html>

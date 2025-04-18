@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<nav class="mynav"  th:fragment="navbar">
+
+            <div class="brand">
+                <img src="/assets/church_logo.jpeg" alt="church logo">
+                <a class="navbar-brand" href="/">BBEK</a>
+            </div>
+            <div class="nav-ctn">
+                <ul class="nav-list">
+
+                    <li class="list-item">
+                        <a class="links" href="/" th:classappend="${requestURI == '/' ? 'active' : ''}">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="links" href="/about" th:classappend="${requestURI == '/about' ? 'active' : ''}">About</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="links" href="/ministries" th:classappend="${requestURI == '/about' ? 'active' : ''}">Ministries</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="links" href="/events" th:classappend="${requestURI == '/about' ? 'active' : ''}">Events</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="links" href="/contact" th:classappend="${requestURI == '/about' ? 'active' : ''}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="login">
+                <button class="login-btn">Login</button>
+            </div>
+            <div class="burger-menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+        </nav>
+
+
+</body>
+</html>

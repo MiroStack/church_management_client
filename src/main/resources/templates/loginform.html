@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+
+<body>
+     <div class="login-wrap" th:fragment="loginForm">
+         <div class="closed-login">
+             <ion-icon name="close-outline"></ion-icon>
+         </div>
+         <div class="login-header">
+             <img src="/assets/church_logo.jpeg" alt="church logo">
+             <h3>Login to your account</h3>
+             <p>Enter your credentials to access your account</p>
+         </div>
+         <form  class="login-form">
+             <label th:for="'username'">Username</label>
+             <div class="input-outline">
+                 <input th:id="'username'" type="text" name="username" placeholder="Enter your username" />
+             </div>
+             <label th:for="'password'">Password</label>
+             <div class="input-outline">
+                 <input th:id="'password'" type="password" name="password " placeholder="Enter your password" />
+             </div>
+
+         </form>
+         <div class="login-option">
+             <div class="remember">
+                 <span class="remember-checkbox"><input type="checkbox"></span>
+                 <span>Remember me</span>
+             </div>
+             <a class="forgot-password">Forgot password?</a>
+         </div>
+         <button type="submit" class="submit-btn">
+             Login
+         </button>
+
+         <div class="register">
+              <span>Don't have an account? </span><a> Register</a>
+         </div>
+
+
+     </div>
+</body>
+</html>
