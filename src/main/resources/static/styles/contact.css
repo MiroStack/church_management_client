@@ -1,0 +1,38 @@
+.contact-section{
+    display: flex;
+    color: var(--white200);
+
+}
+
+.contact-section > .contact-header{
+    text-align: center;
+}
+
+.contact-section > .contact-header > h2{
+    font-size: var(--size-l);
+}
+.contact-section > .contact-header > p{
+    font-size: var(--size-s);
+}
+
+.contact-section > .contact-card{
+    height: 28em;
+    width: 24em;
+    padding:1em;
+    background: rgba( 155, 155, 155, 0.1 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 8px;
+}
+.contact-section > .contact-card > .contact-information > h2{
+    font-size: var(--size-m);
+}
+.contact-section > .contact-card > .contact-information > p{
+    font-size: var(--size-sm);
+}
+.contact-section > .contact-card > .contact-information > div{
+
+}
+.contact-section > .contact-card > .contact-information > div > i{
+    background-color: green;
+}

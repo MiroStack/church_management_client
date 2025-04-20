@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ministries</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
- <h1>This is ministries page</h1>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section>
+
+    </section>
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
 </body>
 </html>

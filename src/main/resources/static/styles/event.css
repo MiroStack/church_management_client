@@ -119,13 +119,16 @@
 }
 
 .birthday-wrap > .birthday-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 10em;
     width: 20em;
     background: rgba( 155, 155, 155, 0.1 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 8px;
-    padding: 0 1em;
+    padding: 1em;
     color: var(--grey200);
 }
 .birthday-wrap > .birthday-card:hover{
@@ -133,7 +136,6 @@
 }
 
 .birthday-wrap > .birthday-card > .birthday-header{
-    margin: 1em 0;
     display: flex;
     align-items: center;
     gap: 1em;
@@ -145,6 +147,9 @@
 .birthday-wrap > .birthday-card > .birthday-header > .card-name > h2{
     font-size: var(--size-s);
     color:var(--green200);
+}
+.birthday-wrap > .birthday-card > .birthday-header > .card-name > p{
+    font-size: var(--size-sm);
 }
 
 .birthday-wrap > .birthday-card > .birthday-details > div > .event-icons{
