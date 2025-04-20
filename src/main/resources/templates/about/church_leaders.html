@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Church Leaders</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section class="about-common-section">
+        <div class="header">
+            <h1 >Church Leaders</h1>
+            <h3 >Bible Baptist Ekklesia of Kawit</h3>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="content-avatar">
+            <div>
+                <img src="/images/img8.png">
+                <h2>Rev. Rodolfo Mojica</h2>
+                <p>Senior Pastor</p>
+            </div>
+            <div>
+                <img src="/images/img6.jpeg">
+                <h2>Rev. Fresco Q. Sulapas</h2>
+                <p>Minister/Resident Pastor</p>
+            </div>
+        </div>
+
+        <div class="content-statement">
+            <p>"Our church is led by dedicated servants who are committed to shepherding the flock and equipping the saints for the work of ministry. They provide spiritual guidance, pastoral care, and administrative leadership for our congregation."</p>
+            <p>Rev. Rodolfo Mojica - Sending Pastor
+                <br>Pastor Rodolfo Mojica serves as our Sending Pastor, providing overall leadership and vision for the church. He is responsible for preaching, teaching, and pastoral care, as well as overseeing the various ministries of the church.
+            </p>
+            <p>Rev. Fresco Q. Sulapas - Senior Pastor
+                <br>Pastor Fresco Q. Sulapas serves as our Senior Pastor, assisting in preaching, teaching, and pastoral care. He works closely with the Sending Pastor to ensure that the spiritual needs of the congregation are met.
+                Our leadership team also includes deacons, ministry leaders, and administrative staff who work together to facilitate the various aspects of church life and ministry.
+            </p>
+
+            <span><a href="/about">Back to About</a></span>
+        </div>
+
+    </section>
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>

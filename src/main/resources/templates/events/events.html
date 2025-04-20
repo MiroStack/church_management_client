@@ -1,10 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Events</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/styles/event.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
- <h1>This is event page</h1>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section class="about-common-section">
+        <div class="header">
+            <h1 >Church Events</h1>
+            <h3 >A glimpse of our church activities and gatherings throughout the year.</h3>
+        </div>
+    </section>
+    <section class="event-section">
+        <div class="search-event">
+           <div class="search-input">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <input type="text" placeholder="Search event">
+           </div>
+
+        </div>
+        <div class="event-wrap">
+              <div class="event-cards">
+                  <img src="/images/img4.jpeg">
+                  <div class="event-cards-content">
+                      <h2>Sunday Service</h2>
+                      <div class="event-details">
+                          <i class="event-icons fa-solid fa-calendar"></i>
+                          <span>March 26, 2023</span>
+                      </div>
+                      <div class="event-details">
+                          <i class="event-icons fa-solid fa-clock"></i>
+                          <span>9:00 AM - 12:00 PM</span>
+                      </div>
+                      <div class="event-details">
+                          <i class="event-icons fa-solid fa-location-dot"></i>
+                          <span>Main Sanctuary</span>
+                      </div>
+                      <p>Join us for worship, prayer, and a powerful message from Pastor Rodolfo Mojica.</p>
+                  </div>
+              </div>
+
+                <div class="event-cards">
+                    <img src="/images/img4.jpeg">
+                    <div class="event-cards-content">
+                        <h2>Sunday Service</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 26, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>9:00 AM - 12:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Main Sanctuary</span>
+                        </div>
+                        <p>Join us for worship, prayer, and a powerful message from Pastor Rodolfo Mojica.</p>
+                    </div>
+                </div>
+                <div class="event-cards">
+                    <img src="/images/img4.jpeg">
+                    <div class="event-cards-content">
+                        <h2>Sunday Service</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 26, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>9:00 AM - 12:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Main Sanctuary</span>
+                        </div>
+                        <p>Join us for worship, prayer, and a powerful message from Pastor Rodolfo Mojica.</p>
+                    </div>
+                </div>
+                <div class="event-cards">
+                    <img src="/images/img4.jpeg">
+                    <div class="event-cards-content">
+                        <h2>Sunday Service</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 26, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>9:00 AM - 12:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Main Sanctuary</span>
+                        </div>
+                        <p>Join us for worship, prayer, and a powerful message from Pastor Rodolfo Mojica.</p>
+                    </div>
+                </div>
+                <div class="event-cards">
+                    <img src="/images/img4.jpeg">
+                    <div class="event-cards-content">
+                        <h2>Sunday Service</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 26, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>9:00 AM - 12:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Main Sanctuary</span>
+                        </div>
+                        <p>Join us for worship, prayer, and a powerful message from Pastor Rodolfo Mojica.</p>
+                    </div>
+                </div>
+                <div class="event-cards">
+                    <img src="/images/img4.jpeg">
+                    <div class="event-cards-content">
+                        <h2>Sunday Service</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 26, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>9:00 AM - 12:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Main Sanctuary</span>
+                        </div>
+                        <p>Join us for worship, prayer, and a powerful message from Pastor Rodolfo Mojica.</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="birthday-wrap">
+
+        </div>
+    </section>
+
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
 </body>
 </html>

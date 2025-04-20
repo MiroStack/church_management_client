@@ -14,11 +14,29 @@
                     <li class="list-item">
                         <a class="links" href="/" th:classappend="${requestURI == '/' ? 'active' : ''}">Home</a>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item about-list">
                         <a class="links" href="/about" th:classappend="${requestURI == '/about' ? 'active' : ''}">About</a>
+                        <div class="menu-options about-options">
+                            <ul>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/mission">Mission</a></li>
+                                <li><a href="/vision">Vision</a></li>
+                                <li><a href="/church_leaders">Church Leaders</a></li>
+                                <li><a href="history">History</a></li>
+                                <li><a href="/department_officers">Department Officers</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="list-item">
+                    <li class="list-item ministries-list">
                         <a class="links" href="/ministries" th:classappend="${requestURI == '/about' ? 'active' : ''}">Ministries</a>
+                        <div class="menu-options ministries-options">
+                            <ul>
+                                <li><a>All Ministries</a></li>
+                                <li><a>Youth Ministries</a></li>
+                                <li><a>Worship Ministries</a></li>
+                                <li><a>Outreach Ministries</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="list-item">
                         <a class="links" href="/events" th:classappend="${requestURI == '/about' ? 'active' : ''}">Events</a>

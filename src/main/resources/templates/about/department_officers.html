@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Department Officers</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section class="about-common-section">
+        <div class="header">
+            <h1 >Department Officers</h1>
+            <h3 >Bible Baptist Ekklesia of Kawit</h3>
+        </div>
+    </section>
+    <section class="officers-section">
+        <div  class="officers">
+            <h2>Adult Ladies Department</h2>
+            <div class="officers-wrap">
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div  class="avatar-info">
+                        <h3>Sis. Danica Aldousari</h3>
+                        <p>President</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Melody Bilog</h3>
+                        <p>Vice President</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Espie Apelado</h3>
+                        <p>Secretary</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Nancy Belleza</h3>
+                        <p>Treasurer</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Ma'am Gina Sulapas</h3>
+                        <p>Auditor</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Danica Aldousari</h3>
+                        <p>Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div  class="officers">
+            <h2>Adult Men Department</h2>
+            <div class="officers-wrap">
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div  class="avatar-info">
+                        <h3>Bro. Danny Delossantos
+                        </h3>
+                        <p>President</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Bro. Roland Santos</h3>
+                        <p>Vice President</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Bro. Robert Apelado</h3>
+                        <p>Secretary</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Bro. Rowel Bucayan</h3>
+                        <p>Treasurer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div  class="officers">
+            <h2>Young People Department</h2>
+            <div class="officers-wrap">
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div  class="avatar-info">
+                        <h3>Sis. Jessica Las</h3>
+                        <p>President</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Bro. Jessie Timuat</h3>
+                        <p>Vice President</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Erica Villegas</h3>
+                        <p>Secretary</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Selah Acojedo</h3>
+                        <p>Assistant Secretary</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Frena May Sulapas</h3>
+                        <p>Treasurer</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Camille Bucayan</h3>
+                        <p>PIO</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="avatar-image" src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="avatar-info">
+                        <h3>Sis. Donita Sibugan</h3>
+                        <p>SOCMED Coordinator</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>

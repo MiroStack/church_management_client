@@ -1,0 +1,207 @@
+.about-section{
+    background-image: url("/images/img2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(20%);
+}
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about-section > * {
+    z-index: 2;
+    position: relative;
+    color: var(--white200);
+}
+
+.about-common-section{
+    background-color: var(--blue500);
+}
+
+.about-section,
+.about-common-section{
+    height: 40vh;
+    color: var(--white200);
+}
+.about-common-section > .header,
+.about-section > .about-header{
+    text-align: center;
+}
+.about-common-section > .header > h1,
+.about-section > .about-header > h1{
+    font-size: var(--size-xl);
+}
+.about-common-section > .header > h3,
+.about-section > .about-header > h3{
+    font-size: var(--size-s);
+    font-weight: 400;
+}
+.about-card-section{
+    height: 85vh;
+    background: var(--blue500);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 1em 3em;
+    padding: 1em;
+}
+
+.content-section{
+    height: auto;
+}
+.content-section >img{
+    height: 24em;
+    border-radius: 8px;
+    margin: 2em 0;
+}
+.content-section > .content-statement{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: rgba( 180, 211, 248, 0.1 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 8px;
+    margin: 2em 0;
+    padding: 2em;
+    font-size: var(--size-s);
+    color: var(--white200);
+    font-weight: 200;
+}
+.content-section > .content-statement > span{
+    height: 2em;
+    width: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white500);
+    border-radius: 8px;
+    margin: auto;
+}
+.content-section > .content-statement > span:hover{
+    background-color: var(--white200);
+}
+.content-section > .content-statement > span > a{
+    color: var(--black200);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.content-section > .content-avatar{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5em;
+    margin: 5em 0;
+}
+.content-section > .content-avatar > div > img{
+    height: 10em;
+    width:  10em;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 1em 0;
+}
+.content-section > .content-avatar > div > h2{
+    color: var(--blue200);
+}
+.content-section > .content-avatar > div > p{
+    color: var(--grey200);
+}
+.content-section > .content-avatar > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.officers-section{
+    height: auto;
+}
+.officers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em 0;
+}
+.officers > h2{
+    color: var(--white200);
+}
+.officers-wrap{
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto;
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (min-width: 300px) and (max-width: 550px) {
+    .about-section > .about-header > h1{
+        font-size: var(--size-m);
+    }
+    .about-section > .about-header > h3{
+        font-size: var(--size-sm);
+        font-weight: 400;
+    }
+    .about-card-section{
+        height: auto;
+        grid-template-columns:  auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        gap: 1em;
+    }
+
+    .content-section >img{
+        height:18em;
+        width: 90%;
+    }
+    .content-section > .content-statement{
+        width: 90%;
+    }
+    .content-section > .content-avatar{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        row-gap: 5em;
+    }
+    .officers-wrap{
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
+}
+
+/* Extra tablet devices (phones, 800px and down) */
+@media only screen and (min-width: 550px) and (max-width: 850px) {
+    .about-card-section{
+        height: auto;
+        grid-template-columns:  auto auto;
+        grid-template-rows: auto auto auto ;
+        gap: 1em;
+    }
+    .content-section > .content-statement{
+        width: 90%;
+    }
+    .officers-wrap{
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
+
+
+}
+
+
+
+

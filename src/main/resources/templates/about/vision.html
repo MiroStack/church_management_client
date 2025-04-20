@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vision</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section class="about-common-section">
+        <div class="header">
+            <h1 >Vision</h1>
+            <h3 >Bible Baptist Ekklesia of Kawit</h3>
+        </div>
+    </section>
+    <section class="content-section">
+        <img src="/images/img5.jpeg">
+        <div class="content-statement">
+            <p>"We are independent Bible Baptist Church fulfilling and carry-out Christ great commission to propagate the Gospel to all mankind and win souls to Christ as found in Matthew 28:19-20. Firmly preach the word of truth into the world. The bible is the final authority of our faith and practice and pure foundation of doctrines."</p>
+            <p>Our vision is to be a church that:
+                <br>Glorifies God in all that we do
+                <br>Reaches the lost with the Gospel of Jesus Christ
+                <br>Disciples believers to spiritual maturity
+                <br>Equips the saints for the work of ministry
+                <br>Impacts our community with the love of Christ
+                <br>Plants new churches to expand God's kingdom
+                <br>We envision a church where every member is actively involved in ministry,
+                <br>using their spiritual gifts to serve God and others, and where lives are transformed by the power of the Gospel.
+            </p>
+
+            <span><a href="/about">Back to About</a></span>
+        </div>
+
+    </section>
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>

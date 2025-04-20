@@ -1,0 +1,61 @@
+.card{
+    height: 22em;
+    width: 22em;
+    background: var(--white500);
+    border-radius: 8px;
+}
+
+.card > img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 50%;
+    width: 100%;
+}
+
+.card > .card-info{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.card > .card-info > h3{
+    font-size: var(--size-s);
+    font-weight: 600;
+}
+
+.card > .card-info > p{
+    font-size: var(--size-sm);
+    font-weight: 400;
+}
+
+.card > .card-info > span{
+    cursor: pointer;
+    color: var(--blue200);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.card > .card-info > span > a{
+    text-decoration: none;
+    color: var(--blue200);
+}
+
+.card > .avatar-image{
+    height: 70%;
+}
+
+.card > .avatar-info{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.card > .avatar-info > h3{
+    font-size: var(--size-s);
+    font-weight: 600;
+}
+
+.card > .avatar-info > p{
+    font-size: var(--size-sm);
+    font-weight: 400;
+}
