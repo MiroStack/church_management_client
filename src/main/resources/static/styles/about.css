@@ -42,13 +42,14 @@
     font-weight: 400;
 }
 .about-card-section{
-    height: 85vh;
+    height: auto;
     background: var(--blue500);
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    gap: 1em 3em;
+    gap: 2em;
     padding: 1em;
+    margin: 1em 0;
 }
 
 .content-section{
@@ -58,6 +59,7 @@
     height: 24em;
     border-radius: 8px;
     margin: 2em 0;
+    object-fit: cover;
 }
 .content-section > .content-statement{
     display: flex;
