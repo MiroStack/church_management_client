@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Bible Baptist Ekklesia of Kawit </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{images/logo.jpg}"/>
+    <link th:href="@{assets/bootstrap-5.3.3-dist/css/bootstrap.min.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/app-assets/vendor/css/rtl/core-dark.css}"/>
+    <link rel="stylesheet" th:href="@{/app-assets/vendor/css/rtl/theme-default-dark.css}"/>
+    <link rel="stylesheet" th:href="@{/app-assets/vendor/fonts/boxicons.css}"/>
+    <link rel="stylesheet" th:href="@{/app-assets/vendor/fonts/fontawesome.css}"/>
+
+    <script th:src="@{assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{assets/js/jquery.min.js}"></script>
+
+</head>
+
+<body>
+
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <div th:replace="~{layout/menu :: _layout-menu}"></div>
+        <div class="layout-page">
+            <div th:replace="~{layout/header :: _header}"></div>
+            <div class="content-wrapper">
+                <div id="frag_container" class="container-xxl flex-grow-1 container-p-y">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="fw-bold">DASHBOARD</h4>
+                            <div class="mb-2 d-flex gap-2 flex-wrap">
+                                <div class="card flex-grow-1">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-item-center">
+                                            <div>
+                                                <span>Total Members</span>
+                                                <h4>1,248</h4>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-xl fa-users" style="color: #74C0FC;"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="text-success">+12 from last month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card flex-grow-1">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-item-center">
+                                            <div>
+                                                <span>Upcoming Events</span>
+                                                <h4>24</h4>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-xl fa-calendar-days" style="color: #63E6BE;"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span>Next 30 days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card flex-grow-1">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-item-center">
+                                            <div>
+                                                <span>Monthly Donations</span>
+                                                <h4>₱24,560</h4>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-xl fa-money-check-dollar"
+                                                   style="color: #FFD43B;"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span class="text-success">+8.2% from last month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card flex-grow-1">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-item-center">
+                                            <div>
+                                                <span>Marriages</span>
+                                                <h4>6</h4>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-xl fa-heart" style="color: #ff0000;"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <span>This year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>Quick Access</h5>
+                            <div class="my-2 d-flex gap-2 flex-wrap">
+                                <div class="flex-grow-1 card">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-2 text-center align-items-center flex-column justify-content-center">
+                                            <span>
+                                                <i class="fa-solid fa-xl fa-users" style="color: #74C0FC;"></i>
+                                            </span>
+                                            <span class="fw-bold">Member Records</span>
+                                            <span>Manage church members</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 card">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-2 text-center align-items-center flex-column justify-content-center">
+                                            <span>
+                                                <i class="fa-solid fa-xl fa-calendar-days" style="color: #63E6BE;"></i>
+                                            </span>
+                                            <span class="fw-bold">Events</span>
+                                            <span>Manage church events</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 card">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-2 text-center align-items-center flex-column justify-content-center">
+                                            <span>
+                                                <i class="fa-solid fa-xl fa-money-check-dollar"
+                                                   style="color: #FFD43B;"></i>
+                                            </span>
+                                            <span class="fw-bold">Tithes & Offerings</span>
+                                            <span>Manage donations</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 card">
+                                    <div class="card-body">
+                                        <div class="d-flex gap-2 text-center align-items-center flex-column justify-content-center">
+                                            <span>
+                                               <i class="fa-solid fa-xl fa-box" style="color: #B197FC;"></i>
+                                            </span>
+                                            <span class="fw-bold">Inventory</span>
+                                            <span>Manage church inventory</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column gap-2">
+                                        <span class="fw-bold">Recent Activity</span>
+                                        <span>Overview of recent church activities</span>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <span><i class="fa-solid fa-xl fa-users"
+                                                             style="color: #74C0FC;"></i></span>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold">New member registration</span>
+                                                        <span>John Smith joined the church</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span>2h ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex gap-4 align-items-center">
+                                                    <span><i class="fa-solid fa-xl fa-calendar-days"
+                                                             style="color: #63E6BE;"></i></span>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold">New event created</span>
+                                                        <span>Easter Sunday Service</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span>5h ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex gap-4 align-items-center">
+                                                    <span> <i class="fa-solid fa-xl fa-money-check-dollar"
+                                                              style="color: #FFD43B;"></i></span>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold">Donation received</span>
+                                                        <span>₱500 for Youth Ministry</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span>1d ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex gap-4 align-items-center">
+                                                    <span> <i class="fa-solid fa-xl fa-heart"
+                                                              style="color: #ff0000;"></i></span>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold">New marriage record</span>
+                                                        <span>Robert Wilson & Jennifer Lee</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span>2d ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<!-- Helpers -->
+<script src="" th:src="@{/app-assets/vendor/js/helpers.js}"></script>
+<script src="" th:src="@{/app-assets/js/config.js}"></script>
+
+<script src="" th:src="@{/app-assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js}"></script>
+<script src="" th:src="@{/app-assets/vendor/libs/hammer/hammer.js}"></script>
+<script src="" th:src="@{/app-assets/vendor/libs/typeahead-js/typeahead.js}"></script>
+<script src="" th:src="@{/app-assets/vendor/libs/select2/select2.js}"></script>
+<script src="" th:src="@{/app-assets/vendor/libs/jquery-mask-plugin/jquery.mask.min.js}"></script>
+
+<script th:src="@{/app-assets/vendor/js/menu.js}"></script>
+<script th:src="@{/app-assets/js/main.js}"></script>
+
+</html>

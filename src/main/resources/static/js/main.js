@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",  ()=>{
    const login = document.querySelector(".submit-btn");
 
     login.addEventListener("click", ()=>{
-       window.location.replace("/admin");
+       window.location.replace("/dashboard");
     });
 
    burgerBtn.addEventListener("click",()=>{

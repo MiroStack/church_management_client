@@ -43,4 +43,12 @@ public class PageController {
         model.addAttribute("requestURI", request.getRequestURI());
         return "ministries/ministries"; // maps to templates/a.html
     }
+
+    @GetMapping("/dashboard")
+    public String dashboard(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Dashboard");
+        return "admin/dashboard/index"; // maps to templates/a.html
+    }
+
 }
