@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section class="about-common-section">
+        <div class="header">
+            <h1 >History</h1>
+            <h3 >Bible Baptist Ekklesia of Kawit</h3>
+        </div>
+    </section>
+    <section class="content-section">
+        <img src="/images/img3.jpg">
+        <div class="content-statement">
+            <p>Bible Baptist Ekklesia of Kawit has a rich history of God's faithfulness and provision. Here are some key milestones in our journey:</p>
+            <p>2006
+                <br>Started to have Mission work in Kawit
+                <br>2015
+                <br>Started to support Foreign Missionaries
+                <br>2016
+                <br>1st Anniversary Celebration as an Organized Church
+                <br>2021
+                <br>1st World Missions Conference
+                <br>2025
+                <br>10th Church Anniversary & 4th World Missions Conference
+
+                Throughout our history, we have seen God's hand at work in our church, bringing people to salvation, growing believers in their faith, and using our congregation to impact our community and beyond with the Gospel of Jesus Christ.
+
+                We look forward to what God will continue to do through Bible Baptist Ekklesia of Kawit in the years to come as we remain faithful to His Word and His mission.
+            </p>
+
+            <span><a href="/about">Back to About</a></span>
+        </div>
+
+    </section>
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>

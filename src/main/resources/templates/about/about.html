@@ -1,10 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
-   <h1>This is about page</h1>
+    <!-- Include Navbar -->
+    <div th:replace="~{loginform :: loginForm}"></div>
+    <div th:replace="~{sidenav :: sidenavigation}"></div>
+    <div class="root">
+        <nav th:replace="~{fragments :: navbar}"></nav>
+         <section class="about-section about-common-h">
+             <div class="about-header ">
+                 <h1 >About Bible Baptist Ekklesia of Kawit</h1>
+                 <h3 >Our mission, vision, and the people who make it all happen.</h3>
+             </div>
+        </section>
+        <section class="about-card-section">
+                <div class="card">
+                    <img src="/images/img2.jpg">
+                    <div class="card-info">
+                        <h3>About Us</h3>
+                        <p>Learn about our church's identity and purpose</p>
+                        <span class="card-link"><a href="/about">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/img4.jpeg">
+                    <div class="card-info">
+                        <h3>Mission</h3>
+                        <p>Our commitment to love the Lord and make disciples</p>
+                        <span class="card-link"><a href="/mission">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/img5.jpeg">
+                    <div class="card-info">
+                        <h3>Vision</h3>
+                        <p>Our vision for fulfilling Christ's Great Commission</p>
+                        <span class="card-link"><a href="/vision">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/img6.jpeg">
+                    <div class="card-info">
+                        <h3>Church Leaders</h3>
+                        <p>Meet the dedicated servants who guide our church</p>
+                        <span class="card-link"><a href="/church_leaders">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/img3.jpg">
+                    <div class="card-info">
+                        <h3>History</h3>
+                        <p>The story of our church from our beginnings to today</p>
+                        <span class="card-link"><a href="/history">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
+                    <div class="card-info">
+                        <h3>Department Officers</h3>
+                        <p>Meet our dedicated department leaders serving in various ministries</p>
+                        <span class="card-link"><a href="/department_officers">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
+                    </div>
+                </div>
+        </section>
+        <section th:replace="~{footer :: footer-section}"></section>
+    </div>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>

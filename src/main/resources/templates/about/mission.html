@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mission</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- Include Navbar -->
+    <div th:replace="~{loginform :: loginForm}"></div>
+    <div th:replace="~{sidenav :: sidenavigation}"></div>
+   <div class="root">
+       <nav th:replace="~{fragments :: navbar}"></nav>
+       <section class="about-common-section">
+               <div class="header">
+                   <h1 >Mission</h1>
+                   <h3 >Bible Baptist Ekklesia of Kawit</h3>
+               </div>
+       </section>
+       <section class="content-section">
+               <img src="/images/img4.jpeg">
+               <div class="content-statement">
+                      <p>"We are the church, we are committed to love the Lord with all thy heart, with all thy soul and with all thy mind. Make disciples to Christ, teach, train, build and equip every believers to become soul winners and Godly leaders of the society in order to help for transforming community with fear of God and believer of Christ Jesus, ministering people and planting churches to every places."</p>
+                      <p> Our mission is rooted in the Great Commission given by Jesus Christ in Matthew 28:19-20: "Go therefore and make disciples of all the nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age."</p>
+                      <p>We strive to fulfill this mission through:
+                      <br>Evangelism and outreach to our community
+                      <br>Discipleship and spiritual growth programs
+                      <br>Training and equipping believers for ministry
+                      <br>Supporting missions work locally and globally
+                      <br>Serving our community with the love of Christ</p>
+
+                   <span><a href="/about">Back to About</a></span>
+               </div>
+
+       </section>
+       <section th:replace="~{footer :: footer-section}"></section>
+   </div>
+   <script src="/js/main.js"></script>
+</body>
+</html>

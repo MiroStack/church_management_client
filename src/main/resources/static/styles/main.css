@@ -4,9 +4,11 @@
     --white200:#F5F5F5;
     --white500:#FFFFFF;
     --primary: #121327;
+    --blue500: #101122;
     --blue200: #1974d3;
     --grey200: #aeadad;
     --green200: #57ed88;
+    --green500: #1ab34c;
     --brown200: #713535;
     --orange200:#F5A623;
     --size-sm:0.9em;
@@ -16,9 +18,6 @@
     --size-xl:2.8em;
     --size-xxl:3.8em;
 }
-
-
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -120,9 +119,6 @@
     transition: all ease-in-out 800ms;
 }
 
-
-
-
 .burger-menu:hover{
     cursor: pointer;
     color: var(--brown200);
@@ -186,6 +182,7 @@ ul li a.links:hover{
     padding: 0 1em;
     color: var(--white200);
     font-weight: bold;
+    text-decoration: none;
 }
 
 .brand > img{
@@ -400,12 +397,13 @@ a.highlight-link{
     display: grid;
      border-bottom:1px solid #656565;
      border-top: 1px solid #656565;
-     grid-template-columns: 25% 25% 25% 25%;
+     grid-template-columns: 25% 15% 30% 30%;
      color: var(--grey200);
      padding: 1em;
 }
  .footer-title{
      color: var(--white200);
+     font-size: var(--size-s);
  }
  .brand-logo{
      display: flex;
@@ -566,6 +564,52 @@ ul.quick-list > li > a:hover{
     color: var(--blue200) !important;
 }
 
+.ministries-list, .about-list{
+    position: relative;
+}
+
+
+.menu-options{
+    position: fixed;
+    height: auto;
+    width: 12em;
+    background-color: var(--white500);
+    border-radius: 8px;
+    transition: all ease-in-out 800ms;
+}
+.menu-options > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+
+    margin: 0;
+    font-size: var(--size-sm);
+    padding: 1em 0;
+}
+
+.menu-options > ul > li{
+    padding:4px 12px;
+}
+.menu-options > ul > li>a{
+    text-decoration: none;
+    color: var(--black200);
+}
+.menu-options > ul > li:hover{
+    cursor: pointer;
+    background-color: var(--white200);
+}
+
+.about-options, .ministries-options{
+    display: none;
+}
+
+.about-list:hover .about-options{
+    display: block;
+}
+.ministries-list:hover .ministries-options{
+    display: block;
+}
 
 
 
@@ -600,8 +644,6 @@ ul.quick-list > li > a:hover{
         width: 100%;
     }
 
-
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -621,9 +663,7 @@ ul.quick-list > li > a:hover{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    section{
-        height: 50vh;
-    }
+
     .hero-section > h1{
         font-size: var(--size-l);
         font-weight: bold;
@@ -643,5 +683,17 @@ ul.quick-list > li > a:hover{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    .mynav{
+        padding: 0 5em;
+    }
+    section{
+        height: 50vh;
+        padding: 1em 5em;
+    }
+    .highlight-section{
+        padding: 0 12em;
+    }
+    .footer-wrap{
+        padding: 1em 6em;
+    }
 }

@@ -1,10 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Events</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/styles/event.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
- <h1>This is event page</h1>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section class="about-common-section">
+        <div class="header">
+            <h1 >Church Events</h1>
+            <h3 >A glimpse of our church activities and gatherings throughout the year.</h3>
+        </div>
+    </section>
+    <section class="event-section">
+        <div class="search-event">
+           <div class="search-input">
+               <i class="search-icon fa-solid fa-magnifying-glass"></i>
+               <input type="text" placeholder="Search event">
+           </div>
+            <div class="event-btn-group">
+                <button class="btn-active" id="event-btn">Upcoming Events</button>
+                <button id="birthday-btn">Upcoming Birthdays</button>
+            </div>
+        </div>
+        <div class="event-wrap">
+              <div class="event-cards">
+                  <img src="/assets/img.jpg">
+                  <div class="event-cards-content">
+                      <h2>Sunday Service</h2>
+                      <div class="event-details">
+                          <i class="event-icons fa-solid fa-calendar"></i>
+                          <span>March 26, 2023</span>
+                      </div>
+                      <div class="event-details">
+                          <i class="event-icons fa-solid fa-clock"></i>
+                          <span>9:00 AM - 12:00 PM</span>
+                      </div>
+                      <div class="event-details">
+                          <i class="event-icons fa-solid fa-location-dot"></i>
+                          <span>Main Sanctuary</span>
+                      </div>
+                      <p>Join us for worship, prayer, and a powerful message from Pastor Rodolfo Mojica.</p>
+                  </div>
+              </div>
+
+                <div class="event-cards">
+                    <img src="/images/img3.jpg">
+                    <div class="event-cards-content">
+                        <h2>Bible Study</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 21, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>7:00 PM - 8:30 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Fellowship Hall</span>
+                        </div>
+                        <p>Dive deeper into God's word as we study the book of Romans together.</p>
+                    </div>
+                </div>
+
+                <div class="event-cards">
+                    <img src="/images/img9.png">
+                    <div class="event-cards-content">
+                        <h2>Youth Group</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 22, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>6:30 PM - 8:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Youth Center</span>
+                        </div>
+                        <p>A fun evening of games, worship, and Bible teaching for students grades 6-12.</p>
+                    </div>
+                </div>
+                <div class="event-cards">
+                    <img src="/images/img4.jpeg">
+                    <div class="event-cards-content">
+                        <h2>Choir Practice</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 24, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>5:00 PM - 6:30 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Choir Room</span>
+                        </div>
+                        <p>Weekly rehearsal for our church choir. New members are always welcome!</p>
+                    </div>
+                </div>
+                <div class="event-cards">
+                    <img src="/images/img10.png">
+                    <div class="event-cards-content">
+                        <h2>Street Evangelism</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>March 28, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>10:00 AM - 11:30 AM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Kawit Town Center</span>
+                        </div>
+                        <p>Sharing the Gospel with our community through personal evangelism.</p>
+                    </div>
+                </div>
+                <div class="event-cards">
+                    <img src="/images/img5.jpeg">
+                    <div class="event-cards-content">
+                        <h2>Easter Drama Presentation</h2>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-calendar"></i>
+                            <span>April 9, 2023</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-clock"></i>
+                            <span>7:00 PM - 8:00 PM</span>
+                        </div>
+                        <div class="event-details">
+                            <i class="event-icons fa-solid fa-location-dot"></i>
+                            <span>Main Sanctuary</span>
+                        </div>
+                        <p>A special drama presentation celebrating the resurrection of Jesus Christ.</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="birthday-wrap">
+              <div class="birthday-card">
+                  <div class="birthday-header">
+                      <img src="/assets/church_logo.jpeg">
+                      <div class="card-name">
+                          <h2>John Doe</h2>
+                          <p>Member</p>
+                      </div>
+
+                  </div>
+                  <div class="birthday-details">
+                         <div>
+                             <i class="event-icons fa-solid fa-calendar"></i>
+                             <span>Birthday: April 5</span>
+                         </div>
+                      <p>Turning 35 years old</p>
+                  </div>
+              </div>
+
+            <div class="birthday-card">
+                <div class="birthday-header">
+                    <img src="/assets/church_logo.jpeg">
+                    <div class="card-name">
+                        <h2>Pastor Rodolfo Mojica</h2>
+                        <p>Senior Pastor</p>
+                    </div>
+
+                </div>
+                <div class="birthday-details">
+                    <div>
+                        <i class="event-icons fa-solid fa-calendar"></i>
+                        <span>Birthday: April 12</span>
+                    </div>
+                    <p>Turning 52 years old</p>
+                </div>
+            </div>
+
+            <div class="birthday-card">
+                <div class="birthday-header">
+                    <img src="/assets/church_logo.jpeg">
+                    <div class="card-name">
+                        <h2>Maria Santos</h2>
+                        <p>Member</p>
+                    </div>
+
+                </div>
+                <div class="birthday-details">
+                    <div>
+                        <i class="event-icons fa-solid fa-calendar"></i>
+                        <span>Birthday: April 15</span>
+                    </div>
+                    <p>Turning 28 years old</p>
+                </div>
+            </div>
+
+            <div class="birthday-card">
+                <div class="birthday-header">
+                    <img src="/assets/church_logo.jpeg">
+                    <div class="card-name">
+                        <h2>Deacon Pedro Reyes</h2>
+                        <p>Deacon</p>
+                    </div>
+
+                </div>
+                <div class="birthday-details">
+                    <div>
+                        <i class="event-icons fa-solid fa-calendar"></i>
+                        <span>Birthday: April 18</span>
+                    </div>
+                    <p>Turning 45 years old</p>
+                </div>
+            </div>
+
+            <div class="birthday-card">
+                <div class="birthday-header">
+                    <img src="/assets/church_logo.jpeg">
+                    <div class="card-name">
+                        <h2>Sister Elena Cruz</h2>
+                        <p>Choir Leader</p>
+                    </div>
+
+                </div>
+                <div class="birthday-details">
+                    <div>
+                        <i class="event-icons fa-solid fa-calendar"></i>
+                        <span>Birthday: April 22</span>
+                    </div>
+                    <p>Turning 38 years old</p>
+                </div>
+            </div>
+
+            <div class="birthday-card">
+                <div class="birthday-header">
+                    <img src="/assets/church_logo.jpeg">
+                    <div class="card-name">
+                        <h2>John Doe</h2>
+                        <p>Member</p>
+                    </div>
+
+                </div>
+                <div class="birthday-details">
+                    <div>
+                        <i class="event-icons fa-solid fa-calendar"></i>
+                        <span>Birthday: April 5</span>
+                    </div>
+                    <p>Turning 35 years old</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
+<script src="/js/event.js"></script>
 </body>
 </html>

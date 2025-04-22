@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contact</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <link rel="stylesheet" th:href="@{/styles/about.css}">
+    <link rel="stylesheet" th:href="@{/styles/card.css}">
+    <link rel="stylesheet" th:href="@{/styles/contact.css}">
+    <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-<h1>This is contact page</h1>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section class="contact-section">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Please fill out the form below or use our contact information.</p>
+        </div>
+        <div class="contact-card">
+            <div class="contact-information">
+                <h2>Contact Information</h2>
+                <p>Reach out to us using any of these methods</p>
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <span><h3>Address</h3></span>
+                     <p>123 Binakayan St., Kawit, Cavite, Philippines</p>
+                </div>
+
+                <div>
+                   <span> <i class="fa-solid fa-phone"></i></span>
+                    <span><h3>Phone</h3></span>
+                    <p>+63 912 345 6789</p>
+                </div>
+
+                <div>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <span><h3>Email</h3></span>
+                    <p>info@bbek.org</p>
+                </div>
+
+                <div>
+                    <span><i class="fa-solid fa-clock"></i></span>
+                    <span><h3>Service Hours</h3></span>
+                    <p>Sunday: 9:00 AM - 12:00 PM</p>
+                    <p>Wednesday: 6:00 PM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="contact-form">
+
+            </div>
+            <div class="google-map">
+
+            </div>
+        </div>
+    </section>
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
 </body>
 </html>

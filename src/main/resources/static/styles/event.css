@@ -1,0 +1,197 @@
+.event-section{
+    width: auto;
+    height: auto;
+}
+.event-wrap{
+    height: auto;
+    padding: 2em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 1em;
+    column-gap: 2em;
+    justify-content: center;
+
+}
+.event-wrap > .event-cards{
+    height: 24em;
+    width: 22em;
+    background: rgba( 155, 155, 155, 0.1 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 8px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.event-wrap > .event-cards:hover{
+    border: 1px solid var(--green200);
+}
+.event-wrap > .event-cards >img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 12em;
+    width: 100%;
+    object-fit: cover;
+}
+
+.event-cards > .event-cards-content{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+    padding: 0 1em;
+    color: var(--white200);
+    font-size: var(--size-sm);
+}
+.event-details > .event-icons {
+    width: 2em;
+}
+.event-wrap > .event-cards > .event-cards-content > h2, .event-details > .event-icons {
+    color: var(--green500);
+}
+
+.event-section > .search-event{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.event-section > .search-event > .search-input{
+    height: 3em;
+    width: 22em;
+    background: rgba( 155, 155, 155, 0.1 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 1em;
+    color: var(--white200);
+}
+
+.event-section > .search-event > .search-input > input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--white200);
+}
+.event-section > .search-event > .search-input > .search-icon,
+.event-section > .search-event > .search-input > input::placeholder{
+    color: var(--grey200);
+}
+.event-section > .search-event > .event-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.event-section > .search-event > .event-btn-group > button{
+    height: 3em;
+    padding: 8px;
+    background: rgba( 155, 155, 155, 0.1 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: var(--white200);
+    cursor: pointer;
+}
+.event-section > .search-event > .event-btn-group > button:hover{
+    background: rgba(239, 225, 225, 0.1);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+.event-section > .search-event > .event-btn-group > button.btn-active{
+    background-color: var(--green500);
+}
+
+
+.birthday-wrap{
+    width: 100%;
+    display: none;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 1em;
+    column-gap: 2em;
+    justify-content: center;
+    padding: 2em;
+}
+
+.birthday-wrap > .birthday-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10em;
+    width: 20em;
+    background: rgba( 155, 155, 155, 0.1 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--grey200);
+}
+.birthday-wrap > .birthday-card:hover{
+    border: 1px solid var(--green200);
+}
+
+.birthday-wrap > .birthday-card > .birthday-header{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.birthday-wrap > .birthday-card > .birthday-header > img{
+    border-radius: 50%;
+    height: 4em;
+}
+.birthday-wrap > .birthday-card > .birthday-header > .card-name > h2{
+    font-size: var(--size-s);
+    color:var(--green200);
+}
+.birthday-wrap > .birthday-card > .birthday-header > .card-name > p{
+    font-size: var(--size-sm);
+}
+
+.birthday-wrap > .birthday-card > .birthday-details > div > .event-icons{
+   color: var(--green200);
+}
+
+
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (min-width: 300px) and (max-width: 550px) {
+    .event-section > .search-event{
+        flex-direction: column;
+    }
+
+
+    .event-wrap{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        padding: 1em;
+    }
+    .birthday-wrap{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        padding: 1em;
+    }
+}
+
+/* Extra tablet devices (phones, 800px and down) */
+@media only screen and (min-width: 550px) and (max-width: 850px) {
+    .event-wrap{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto ;
+        row-gap: 1em;
+    }
+    .birthday-wrap{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto ;
+        row-gap: 1em;
+    }
+
+
+}
