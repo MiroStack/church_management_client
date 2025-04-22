@@ -43,6 +43,32 @@ public class PageController {
         model.addAttribute("requestURI", request.getRequestURI());
         return "ministries/ministries"; // maps to templates/a.html
     }
+    @GetMapping("/mission")
+    public String mission(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        return "about/mission"; // maps to templates/a.html
+    }
+
+    @GetMapping("/vision")
+    public String vision(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        return "about/vision"; // maps to templates/a.html
+    }
+    @GetMapping("/church_leaders")
+    public String churchLeaders(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        return "about/church_leaders"; // maps to templates/a.html
+    }
+    @GetMapping("/department_officers")
+    public String departmentOfficers(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        return "about/department_officers"; // maps to templates/a.html
+    }
+    @GetMapping("/history")
+    public String history(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        return "about/history"; // maps to templates/a.html
+    }
 
     @GetMapping("/dashboard")
     public String dashboard(HttpServletRequest request, Model model) {
