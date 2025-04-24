@@ -77,4 +77,11 @@ public class PageController {
         return "admin/dashboard/index"; // maps to templates/a.html
     }
 
+    @GetMapping("/dashboardMember")
+    public String dashboardMember(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Dashboard");
+        return "member/dashboard/index"; // maps to templates/a.html
+    }
+
 }

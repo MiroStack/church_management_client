@@ -10,7 +10,15 @@ document.addEventListener("DOMContentLoaded",  ()=>{
    const login = document.querySelector(".submit-btn");
 
     login.addEventListener("click", ()=>{
-       window.location.replace("/dashboard");
+       var username = $("#username").val();
+       var password = $("#password").val();
+       if(password.toLowerCase() == 'admin' && username.toLowerCase() == 'admin'){
+            window.location.replace("/dashboard");
+       }else if (password.toLowerCase() == 'member' && username.toLowerCase() == 'member'){
+           window.location.replace("/dashboardMember");
+       }else{
+            alert("wrong credentials");
+       }
     });
 
    burgerBtn.addEventListener("click",()=>{

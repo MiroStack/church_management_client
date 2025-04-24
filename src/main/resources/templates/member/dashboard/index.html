@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Bible Baptist Ekklesia of Kawit </title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/assets/church_logo.jpeg}"/>
+    <link th:href="@{assets/bootstrap-5.3.3-dist/css/bootstrap.min.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/app-assets/vendor/css/rtl/core-dark.css}"/>
+    <link rel="stylesheet" th:href="@{/app-assets/vendor/css/rtl/theme-default-dark.css}"/>
+    <link rel="stylesheet" th:href="@{/app-assets/vendor/fonts/boxicons.css}"/>
+    <link rel="stylesheet" th:href="@{/app-assets/vendor/fonts/fontawesome.css}"/>
+
+    <script th:src="@{assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{assets/js/jquery.min.js}"></script>
+
+</head>
+
+<body>
+
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <div th:replace="~{layoutMember/menu :: _layout-menu}"></div>
+        <div class="layout-page">
+            <div th:replace="~{layoutMember/header :: _header}"></div>
+            <div class="content-wrapper">
+                <div id="frag_container" class="container-xxl flex-grow-1 container-p-y">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="p-0 m-0">Member Dashboard</h3>
+                            <p>Welcome to your personal church dashboard</p>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="flex-grow-1">
+                                            <h4>Welcome back, John!</h4>
+                                            <p>It's good to see you again. Here's what's happening with your church
+                                                community.</p>
+                                        </div>
+                                        <div class=" text-end">
+                                            <button class="btn btn-primary">View My Profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3 col-6 p-2">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-item-center">
+                                                <div>
+                                                    <span>My Attendance</span>
+                                                    <h4>12</h4>
+                                                    <p class="text-primary">Last attended: Sunday Service</p>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-xl fa-calendar" style="color: #74C0FC;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6 p-2">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-item-center">
+                                                <div>
+                                                    <span>Upcoming Events</span>
+                                                    <h4>4</h4>
+                                                    <p class="text-primary">Next: Sunday Service</p>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-xl fa-calendar" style="color: #B197FC;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6 p-2">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-item-center">
+                                                <div>
+                                                    <span>My Donations</span>
+                                                    <h4>₱2,500</h4>
+                                                    <p class="text-primary">Year to date</p>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-xl fa-money-check-dollar"
+                                                       style="color: #FFD43B;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6 p-2">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-item-center">
+                                                <div>
+                                                    <span>Prayer Requests</span>
+                                                    <h4>3</h4>
+                                                    <p class="text-primary">1 new response</p>
+                                                </div>
+                                                <div>
+                                                    <i class="fa-solid fa-xl fa-heart" style="color: #ff0000;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h4 class="p-0 m-0">My Recent Activity</h4>
+                                            <p>Your latest interactions with the church</p>
+                                            <div class="d-flex gap-3 flex-column">
+                                                <div class="d-flex align-items-center flex-nowrap flex-row gap-2">
+                                                    <div class="p-2"><i class="fa-solid fa-xl fa-calendar"
+                                                                        style="color: #74C0FC;"></i></div>
+                                                    <div>
+                                                        <span>You registered for Sunday Service</span>
+                                                        <p class="p-0 m-0 text-muted">2 days ago</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-nowrap flex-row gap-2">
+                                                    <div class="p-2"><i class="fa-solid fa-lg fa-money-check-dollar"
+                                                                        style="color: #FFD43B;"></i></div>
+                                                    <div>
+                                                        <span>Your donation was received</span>
+                                                        <p class="p-0 m-0 text-muted">1 week ago</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-nowrap flex-row gap-2">
+                                                    <div class="p-2">
+                                                        <i class="fa-solid fa-xl fa-heart" style="color: #ff0000;"></i>
+                                                    </div>
+                                                    <div>
+                                                        <span>Your prayer request was submitted</span>
+                                                        <p class="p-0 m-0 text-muted">2 weeks ago</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-nowrap flex-row gap-2">
+                                                    <div class="p-2"><i class="fa-solid fa-xl fa-user"
+                                                                        style="color: #74C0FC;"></i></div>
+                                                    <div>
+                                                        <span>You updated your profile information</span>
+                                                        <p class="p-0 m-0 text-muted">1 month ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex">
+                                                <button class="btn btn-outline-warning w-100">View All Activity</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h4 class="p-0 m-0">Upcoming Events</h4>
+                                            <p>Events scheduled in the next 7 days</p>
+                                            <div class="d-flex flex-column gap-3">
+                                                <div class="d-flex align-items-center flex-row justify-content-between">
+                                                    <div class="">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="p-2">
+                                                                <i class="fa-solid fa-xl fa-calendar"
+                                                                   style="color: #B197FC;"></i>
+                                                            </div>
+                                                            <div class="">
+                                                                <span>Sunday Service</span>
+                                                                <p class="text-muted p-0 m-0">Sunday, 9:00 AM • Main
+                                                                    Sanctuary</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-row justify-content-between">
+                                                    <div class="">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="p-2">
+                                                                <i class="fa-solid fa-xl fa-calendar"
+                                                                   style="color: #B197FC;"></i>
+                                                            </div>
+                                                            <div class="">
+                                                                <span>Bible Study</span>
+                                                                <p class="text-muted p-0 m-0">Wednesday, 7:00 PM •
+                                                                    Fellowship
+                                                                    Hall</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-row justify-content-between">
+                                                    <div class="">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="p-2">
+                                                                <i class="fa-solid fa-xl fa-calendar"
+                                                                   style="color: #B197FC;"></i>
+                                                            </div>
+                                                            <div class="">
+                                                                <span>Youth Group</span>
+                                                                <p class="text-muted p-0 m-0">Friday, 6:30 PM • Youth
+                                                                    Center</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-row justify-content-between">
+                                                    <div class="">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="p-2">
+                                                                <i class="fa-solid fa-xl fa-calendar"
+                                                                   style="color: #B197FC;"></i>
+                                                            </div>
+                                                            <div class="">
+                                                                <span>Choir Practice</span>
+                                                                <p class="text-muted p-0 m-0">Saturday, 5:00 PM • Choir
+                                                                    Room</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn"><i class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex">
+                                                <button class="btn btn-outline-warning w-100">View All Events</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4>Quick Access</h4>
+
+                            <div class="d-flex gap-2 flex-wrap">
+                                <div class="card" style="width:18rem">
+                                    <div class="card-body">
+                                        <div class="text-center d-flex flex-column gap-2">
+                                            <div><i class="fa-solid fa-house fa-xl" style="color: #B197FC;"></i></div>
+                                            <span>My Dashboard</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" style="width:18rem">
+                                    <div class="card-body">
+                                        <div class="text-center d-flex flex-column gap-2">
+                                            <div><i class="fa-solid fa-user fa-xl" style="color: #FFD43B;"></i></div>
+                                            <span>My Profile</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" style="width:18rem">
+                                    <div class="card-body">
+                                        <div class="text-center d-flex flex-column gap-2">
+                                            <div><i class="fa-solid fa-calendar fa-xl" style="color: #B197FC;"></i></div>
+                                            <span>Church Events</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" style="width:18rem">
+                                    <div class="card-body">
+                                        <div class="text-center d-flex flex-column gap-2">
+                                            <div><i class="fa-solid fa-book-open fa-xl" style="color: #74C0FC;"></i></div>
+                                            <span>Bible Study</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" style="width:18rem">
+                                    <div class="card-body">
+                                        <div class="text-center d-flex flex-column gap-2">
+                                            <div><i class="fa-solid fa-bell fa-xl" style="color: #fb6432;"></i></div>
+                                            <span>Announcement</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<!-- Helpers -->
+<script src="" th:src="@{/app-assets/vendor/js/helpers.js}"></script>
+<script src="" th:src="@{/app-assets/js/config.js}"></script>
+
+<script src="" th:src="@{/app-assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js}"></script>
+<script src="" th:src="@{/app-assets/vendor/libs/hammer/hammer.js}"></script>
+<script src="" th:src="@{/app-assets/vendor/libs/typeahead-js/typeahead.js}"></script>
+<script src="" th:src="@{/app-assets/vendor/libs/select2/select2.js}"></script>
+<script src="" th:src="@{/app-assets/vendor/libs/jquery-mask-plugin/jquery.mask.min.js}"></script>
+
+<script th:src="@{/app-assets/vendor/js/menu.js}"></script>
+<script th:src="@{/app-assets/js/main.js}"></script>
+
+</html>

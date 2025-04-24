@@ -15,18 +15,19 @@
 <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
 </head>
 <body>
-    <!-- Include Navbar -->
-    <div th:replace="~{loginform :: loginForm}"></div>
-    <div th:replace="~{sidenav :: sidenavigation}"></div>
-    <div class="root">
-        <nav th:replace="~{fragments :: navbar}"></nav>
-        <section th:replace="~{hero :: hero-section}"></section>
-        <section th:replace="~{highlights :: highlight-section}"></section>
-        <section th:replace="~{footer :: footer-section}"></section>
-    </div>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+    <nav th:replace="~{fragments :: navbar}"></nav>
+    <section th:replace="~{hero :: hero-section}"></section>
+    <section th:replace="~{highlights :: highlight-section}"></section>
+    <section th:replace="~{footer :: footer-section}"></section>
+</div>
 
 
- <script src="/js/main.js"></script>
+<script src="/js/main.js"></script>
+<script th:src="@{assets/js/jquery.min.js}"></script>
 </body>
 
 </html>
