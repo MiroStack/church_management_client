@@ -112,6 +112,13 @@ public class PageController {
         return "admin/department_officers/index";
     }
 
+    @GetMapping("/service_request")
+    public String service_request(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Service Request");
+        return "admin/service/service";
+    }
+
     @GetMapping("/dashboard")
     public String dashboard(HttpServletRequest request, Model model) {
         model.addAttribute("requestURI", request.getRequestURI());
