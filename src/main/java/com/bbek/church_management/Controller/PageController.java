@@ -77,55 +77,6 @@ public class PageController {
         return "admin/dashboard/index"; // maps to templates/a.html
     }
 
-    @GetMapping("/memberRecord")
-    public String memberRecord(HttpServletRequest request, Model model) {
-        model.addAttribute("requestURI", request.getRequestURI());
-        model.addAttribute("pageText", "Member Record");
-        return "admin/member_record/index"; // maps to templates/a.html
-    }
-
-    @GetMapping("/eventsRecord")
-    public String eventsRecord(HttpServletRequest request, Model model) {
-        model.addAttribute("requestURI", request.getRequestURI());
-        model.addAttribute("pageText", "Events");
-        return "admin/events/index"; // maps to templates/a.html
-    }
-
-    @GetMapping("/tithesAndOffering")
-    public String tithesAndOffering(HttpServletRequest request, Model model) {
-        model.addAttribute("requestURI", request.getRequestURI());
-        model.addAttribute("pageText", "Tithes & Offering");
-        return "admin/tithes_and_offering/index"; // maps to templates/a.html
-    }
-
-    @GetMapping("/marriageRecord")
-    public String marriageRecord(HttpServletRequest request, Model model) {
-        model.addAttribute("requestURI", request.getRequestURI());
-        model.addAttribute("pageText", "Marriage Record");
-        return "admin/marriage_record/index"; // maps to templates/a.html
-    }
-
-    @GetMapping("/churchLeadersRecord")
-    public String churchLeadersRecord(HttpServletRequest request, Model model) {
-        model.addAttribute("requestURI", request.getRequestURI());
-        model.addAttribute("pageText", "Church Leaders");
-        return "admin/church_leaders/index"; // maps to templates/a.html
-    }
-
-    @GetMapping("/departmentOfficersRecord")
-    public String departmentOfficersRecord(HttpServletRequest request, Model model) {
-        model.addAttribute("requestURI", request.getRequestURI());
-        model.addAttribute("pageText", "Department Officers");
-        return "admin/department_officers/index"; // maps to templates/a.html
-    }
-
-    @GetMapping("/service_request")
-    public String service_request_record(HttpServletRequest request, Model model) {
-        model.addAttribute("requestURI", request.getRequestURI());
-        model.addAttribute("pageText", "Service Request");
-        return "admin/service_request/index"; // maps to templates/a.html
-    }
-
     @GetMapping("/dashboardMember")
     public String dashboardMember(HttpServletRequest request, Model model) {
         model.addAttribute("requestURI", request.getRequestURI());
@@ -133,6 +84,81 @@ public class PageController {
         return "member/dashboard/index"; // maps to templates/a.html
     }
 
+    @GetMapping("/dashboardTemp")
+    public String dashboardTemp(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Dashboard");
+        return "member/temporary/temporary"; // maps to templates/a.html
+    }
 
+    @GetMapping("/manageMember")
+    public String manageMember(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Manage Member");
+        return "admin/member/memberlist"; // maps to templates/a.html
+    }
+
+    @GetMapping("/addMember")
+    public String addMember(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Manage Member");
+        return "admin/member/addMember"; // maps to templates/a.html
+    }
+
+    @GetMapping("/manageService")
+    public String manageService(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Manage Service");
+        return "admin/service/service"; // maps to templates/a.html
+    }
+
+    @GetMapping("/manageMarriage")
+    public String manageMarriage(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Manage Service");
+        return "admin/service/marriage"; // maps to templates/a.html
+    }
+
+    @GetMapping("/manageBaptism")
+    public String manageBaptism(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Manage Service");
+        return "admin/service/baptism"; // maps to templates/a.html
+    }
+
+    @GetMapping("/manageChildDedication")
+    public String manageChildDedication(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Manage Service");
+        return "admin/service/child_dedication"; // maps to templates/a.html
+    }
+
+    @GetMapping("/memberService")
+    public String memberService(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Request Service");
+        return "member/service/service"; // maps to templates/a.html
+    }
+
+    @GetMapping("/requestMarriage")
+    public String requestMarriage(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Request Service");
+        return "member/service/marriage"; // maps to templates/a.html
+    }
+
+    @GetMapping("/requestBaptism")
+    public String requestBaptism(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Request Service");
+        return "member/service/baptism"; // maps to templates/a.html
+    }
+
+    @GetMapping("/requestChildDedication")
+    public String requestChildDedication(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Request Service");
+        return "member/service/child_dedication"; // maps to templates/a.html
+    }
 
 }

@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded",  ()=>{
    const burgerBtn = document.querySelector(".burger-menu");
    const sideClosed = document.querySelector(".closed-icon");
    const loginBtn = document.querySelectorAll(".login-btn");
+    const registrationBtn = document.querySelector(".registration-btn");
    const loginForm = document.querySelector(".login-wrap");
+   const registrationForm = document.querySelector(".registration-wrap");
    const closedLogin = document.querySelector(".closed-login");
 
    const login = document.querySelector(".submit-btn");
@@ -14,8 +16,11 @@ document.addEventListener("DOMContentLoaded",  ()=>{
        var password = $("#password").val();
        if(password.toLowerCase() == 'admin' && username.toLowerCase() == 'admin'){
             window.location.replace("/dashboard");
-       }else if (password.toLowerCase() == 'member' && username.toLowerCase() == 'member'){
+       }else if (password.toLowerCase() == 'member' && username.toLowerCase() == 'member') {
            window.location.replace("/dashboardMember");
+       }
+       else if (password.toLowerCase() == 'member2' && username.toLowerCase() == 'member2'){
+        window.location.replace("/dashboardTemp");
        }else{
             alert("wrong credentials");
        }

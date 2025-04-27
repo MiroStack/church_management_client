@@ -31,10 +31,20 @@
                         <a class="links" href="/ministries" th:classappend="${requestURI == '/about' ? 'active' : ''}">Ministries</a>
                         <div class="menu-options ministries-options">
                             <ul>
-                                <li><a>All Ministries</a></li>
-                                <li><a>Youth Ministries</a></li>
-                                <li><a>Worship Ministries</a></li>
-                                <li><a>Outreach Ministries</a></li>
+                                <li><a>Soulwinning/Evangelism</a></li>
+                                <li><a>Street Preaching</a></li>
+                                <li><a>Waterm Baptism</a></li>
+                                <li><a>Lord's Supper</a></li>
+                                <li><a>Daily Vacation Bible School</a></li>
+                                <li><a>Feeding Program</a></li>
+                                <li><a>Outreach Program</a></li>
+                                <li><a>Building Strong Family in Christ</a></li>
+                                <li><a>Bible Studies</a></li>
+                                <li><a>Cantata</a></li>
+                                <li><a>World Mission Conference</a></li>
+                                <li><a>Church Anniversary</a></li>
+                                <li><a>Prayer and Fasting</a></li>
+
                             </ul>
                         </div>
                     </li>
@@ -43,6 +53,16 @@
                     </li>
                     <li class="list-item">
                         <a class="links" href="/contact" th:classappend="${requestURI == '/about' ? 'active' : ''}">Contact</a>
+                    </li>
+                    <li class="list-item about-list">
+                        <a class="links" href="/" th:classappend="${requestURI == '/about' ? 'active' : ''}">Ceremony</a>
+                        <div class="menu-options about-options">
+                            <ul>
+                                <li><a href="/requestMarriage">Marriage</a></li>
+                                <li><a href="/requestBaptism">Baptism</a></li>
+                                <li><a href="/requestChildDedication">Child Dedication</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
