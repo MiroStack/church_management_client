@@ -70,6 +70,48 @@ public class PageController {
         return "about/history"; // maps to templates/a.html
     }
 
+    @GetMapping("/memberRecord")
+    public String memberRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Member Record");
+        return "admin/member_record/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/eventsRecord")
+    public String eventsRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Events Record");
+        return "admin/events/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/tithesAndOffering")
+    public String tithesAndOffering(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Tithes & Offering");
+        return "admin/tithes_and_offering/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/marriageRecord")
+    public String marriageRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Marriage Record");
+        return "admin/marriage_record/index";
+    }
+
+    @GetMapping("/churchLeadersRecord")
+    public String churchLeadersRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Church Leaders");
+        return "admin/church_leaders/index";
+    }
+
+    @GetMapping("/departmentOfficersRecord")
+    public String departmentOfficersRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Department Officers");
+        return "admin/department_officers/index";
+    }
+
     @GetMapping("/dashboard")
     public String dashboard(HttpServletRequest request, Model model) {
         model.addAttribute("requestURI", request.getRequestURI());
