@@ -1,0 +1,41 @@
+<div th:fragment="_add_member_modal" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="modal fade" id="add_member_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="add_member_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="add_member_modal_label">Add New Member</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-2">
+                        <span>Name</span>
+                        <input class="form-control"/>
+                        <span>Department</span>
+                        <select class="form-select">
+                            <option>Adult Ladies</option>
+                            <option>Adult Men</option>
+                            <option>Young People</option>
+                        </select>
+                        <span>Role</span>
+                        <select class="form-select">
+                            <option>President</option>
+                            <option>Vice President</option>
+                            <option>Secretary</option>
+                            <option>Treasurer</option>
+                            <option>Member</option>
+                        </select>
+                        <span>Contact Number</span>
+                        <input class="form-control"/>
+                        <span>Email</span>
+                        <input type="email" class="form-control"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
