@@ -506,6 +506,7 @@ ul.quick-list > li > a:hover{
     height: var(--size-xxl);
     border-radius: 50%;
     margin: 1em 0;
+    gap: 1em;
 }
 .login-header > h3{
     font-size: var(--size-s);
@@ -519,13 +520,14 @@ ul.quick-list > li > a:hover{
     display: flex;
     align-items: start;
     flex-direction: column;
+   margin: 1em 0;
 }
 .login-form > .input-outline{
     width: 100%;
     margin: .5em 0;
 }
 .login-form > .input-outline> input{
-    height: 2.5em;
+    height: 3.5em;
     border: 1px solid var(--grey200);
     outline: none;
     width: 100%;
@@ -554,14 +556,6 @@ ul.quick-list > li > a:hover{
     height: 3em;
     width: 100%;
     background-color: var(--blue200);
-}
-.register{
-    width: 100%;
-    text-align: center;
-}
-.register > a{
-    cursor: pointer;
-    color: var(--blue200) !important;
 }
 
 .ministries-list, .about-list{
