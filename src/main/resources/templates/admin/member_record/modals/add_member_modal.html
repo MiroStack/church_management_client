@@ -1,0 +1,197 @@
+<div th:fragment="_add_member_modal" xmlns:th="http://www.w3.org/1999/xhtml">
+    <!-- Modal -->
+    <div class="modal fade" id="add_member_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="add_member_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="add_member_modal_label">Add Member</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="d-flex flex-nowrap nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item w-100" role="presentation">
+                            <button class="nav-link active" id="pills-personal-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-personal" type="button" role="tab"
+                                    aria-controls="pills-personal"
+                                    aria-selected="true">Personal
+                            </button>
+                        </li>
+                        <li class="nav-item w-100" role="presentation">
+                            <button class="nav-link" id="pills-address-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-address" type="button" role="tab"
+                                    aria-controls="pills-address" aria-selected="false">Address
+                            </button>
+                        </li>
+                        <li class="nav-item w-100" role="presentation">
+                            <button class="nav-link" id="pills-family-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-family" type="button" role="tab"
+                                    aria-controls="pills-family" aria-selected="false">Family
+                            </button>
+                        </li>
+                        <li class="nav-item w-100" role="presentation">
+                            <button class="nav-link" id="pills-church-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-church" type="button" role="tab"
+                                    aria-controls="pills-church" aria-selected="false">Church
+                            </button>
+                        </li>
+                        <li class="nav-item w-100" role="presentation">
+                            <button class="nav-link" id="pills-additional-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-additional" type="button" role="tab"
+                                    aria-controls="pills-additional" aria-selected="false">Additional
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-personal" role="tabpanel"
+                             aria-labelledby="pills-personal-tab" tabindex="0">
+                            <div class="d-flex flex-column gap-2">
+                                <span>Full Name</span>
+                                <input class="form-control"/>
+                                <div class="d-flex gap-2 flex-nowrap">
+                                    <div class="d-flex flex-column gap-2 w-100">
+                                        <span>Gender</span>
+                                        <select class="form-control">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex flex-column gap-2 w-100">
+                                        <span>Age</span>
+                                        <input type="number" class="form-control"/>
+                                    </div>
+                                </div>
+                                <span>Birth Date</span>
+                                <input type="date" class="form-control"/>
+                                <div class="d-flex gap-2 flex-nowrap">
+                                    <div class="d-flex flex-column gap-2 w-100">
+                                        <span>Email</span>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                    <div class="d-flex flex-column gap-2 w-100">
+                                        <span>Phone</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 flex-nowrap">
+                                    <div class="d-flex flex-column gap-2 w-100">
+                                        <span>Civil Status</span>
+                                        <select class="form-control">
+                                            <option value="single">Single</option>
+                                            <option value="married">Married</option>
+                                            <option value="widowed">Widowed</option>
+                                            <option value="divorced">Divorced</option>
+                                            <option value="seperated">Seperated</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex flex-column gap-2 w-100">
+                                        <span>Occupation</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <button class="btn btn-primary">Next</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-address" role="tabpanel"
+                             aria-labelledby="pills-address-tab" tabindex="0">
+                            <div class="d-flex flex-column gap-2">
+                                <span>Street Address</span>
+                                <input class="form-control"/>
+                                <div class="d-flex gap-2">
+                                    <div class="w-100 flex-column gap-2  d-flex">
+                                        <span>Barangay</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                    <div class="w-100 flex-column gap-2 d-flex">
+                                        <span>City/Municipality</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 ">
+                                    <div class="w-100 d-flex gap-2 flex-column">
+                                        <span>Province</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                    <div class="w-100 d-flex gap-2 flex-column">
+                                        <span>Postal Code</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary">Previous</button>
+                                    <button class="btn btn-primary">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-family" role="tabpanel"
+                             aria-labelledby="pills-family-tab" tabindex="0">
+                            <div class="d-flex flex-column gap-2">
+                                <span>Guardian/Parent Name</span>
+                                <input class="form-control"/>
+                                <div class="d-flex gap-2">
+                                    <div class="d-flex flex-column gap-2 w-100">
+                                        <span>Relationship to Guardian</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                    <div class="d-flex flex-column gap-2 w-100">
+                                        <span>Guardian Phone</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                </div>
+                                <span>Family Members in Church</span>
+                                <input class="form-control"/>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary">Previous</button>
+                                    <button class="btn btn-primary">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-church" role="tabpanel"
+                             aria-labelledby="pills-church-tab" tabindex="0">
+                            <div class="d-flex gap-2 flex-column">
+                                <span>Member Since</span>
+                                <input class="form-control" type="date">
+                                <span>Role in Church</span>
+                                <input class="form-control" type="text">
+                                <span>Previous Church (if applicable)</span>
+                                <input class="form-control" type="text">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary">Previous</button>
+                                    <button class="btn btn-primary">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-additional" role="tabpanel"
+                             aria-labelledby="pills-additional-tab" tabindex="0">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-2">
+                                    <div class="d-flex w-100 flex-column gap-2">
+                                        <span>Emergency Contact</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                    <div class="d-flex w-100 flex-column gap-2">
+                                        <span>Emergency Phone</span>
+                                        <input class="form-control"/>
+                                    </div>
+                                </div>
+                                <span>Health Conditions</span>
+                                <input class="form-control" />
+                                <span>Skills & Talents</span>
+                                <input class="form-control" />
+                                <span>Additional Notes</span>
+                                <input class="form-control" />
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary">Previous</button>
+                                    <button class="btn btn-primary">Add Member</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

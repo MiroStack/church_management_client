@@ -77,11 +77,62 @@ public class PageController {
         return "admin/dashboard/index"; // maps to templates/a.html
     }
 
+    @GetMapping("/memberRecord")
+    public String memberRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Member Record");
+        return "admin/member_record/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/eventsRecord")
+    public String eventsRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Events");
+        return "admin/events/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/tithesAndOffering")
+    public String tithesAndOffering(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Tithes & Offering");
+        return "admin/tithes_and_offering/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/marriageRecord")
+    public String marriageRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Marriage Record");
+        return "admin/marriage_record/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/churchLeadersRecord")
+    public String churchLeadersRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Church Leaders");
+        return "admin/church_leaders/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/departmentOfficersRecord")
+    public String departmentOfficersRecord(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Department Officers");
+        return "admin/department_officers/index"; // maps to templates/a.html
+    }
+
+    @GetMapping("/service_request")
+    public String service_request_record(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        model.addAttribute("pageText", "Service Request");
+        return "admin/service_request/index"; // maps to templates/a.html
+    }
+
     @GetMapping("/dashboardMember")
     public String dashboardMember(HttpServletRequest request, Model model) {
         model.addAttribute("requestURI", request.getRequestURI());
         model.addAttribute("pageText", "Dashboard");
         return "member/dashboard/index"; // maps to templates/a.html
     }
+
+
 
 }

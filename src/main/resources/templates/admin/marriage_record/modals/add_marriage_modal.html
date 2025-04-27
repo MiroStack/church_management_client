@@ -1,0 +1,97 @@
+<div th:fragment="_add_marriage_modal" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="modal fade" id="add_marriage_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="add_marriage_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex flex-column">
+                        <h1 class="modal-title fs-5" id="add_marriage_modal_label">Add New Marriage</h1>
+                        <p class="text-muted">Enter details for the new marriage</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-2">
+
+                        <span class="text-primary">Groom Information</span>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Full Name</span>
+                                <input class="form-control"/>
+                            </div>
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Phone</span>
+                                <input class="form-control"/>
+                            </div>
+                        </div>
+                        <span>Address</span>
+                        <input class="form-control"/>
+                        <span>Parents</span>
+                        <input class="form-control"/>
+
+                        <span class="text-primary">Bride Information</span>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Full Name</span>
+                                <input class="form-control"/>
+                            </div>
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Phone</span>
+                                <input class="form-control"/>
+                            </div>
+                        </div>
+                        <span>Address</span>
+                        <input class="form-control"/>
+                        <span>Parents</span>
+                        <input class="form-control"/>
+
+                        <span class="text-primary">Ceremony Details</span>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Date</span>
+                                <input type="date" class="form-control"/>
+                            </div>
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Time</span>
+                                <input type="time" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Status</span>
+                                <select class="form-control">
+                                    <option value="scheduled">Scheduled</option>
+                                    <option value="completed">Completed</option>
+                                </select>
+                            </div>
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Venue</span>
+                                <input type="text" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Officiating Pastor</span>
+                                <input  class="form-control"/>
+                            </div>
+                            <div class="d-flex w-100 flex-column gap-2">
+                                <span>Expected Attendees</span>
+                                <input type="number" class="form-control"/>
+                            </div>
+                        </div>
+                        <span>Witnesses</span>
+                        <input class="form-control" />
+                        <span>Couple Photo</span>
+                        <input type="file" class="form-control" />
+                        <span>Notes</span>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add Marriage</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

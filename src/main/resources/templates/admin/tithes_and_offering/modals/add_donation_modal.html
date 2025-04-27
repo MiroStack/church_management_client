@@ -1,0 +1,56 @@
+<div th:fragment="_add_donation_modal" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="modal fade" id="add_donation_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="_add_donation_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex flex-column">
+                        <h1 class="modal-title fs-5" id="_add_donation_modal_label">Add New Donation</h1>
+                        <p class="text-muted">Record a new tithe or offering.</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-2">
+                        <div class="d-flex gap-2">
+                            <div class="w-100 d-flex flex-column gap-2">
+                                <span>Donor Name</span>
+                                <input class="form-control"/>
+                            </div>
+                            <div class="w-100  d-flex flex-column gap-2">
+                                <span>Amount</span>
+                                <input type="number" class="form-control"/>
+                            </div>
+                        </div>
+                        <span>Date</span>
+                        <input type="date" class="form-control"/>
+                        <span>Address</span>
+                        <input class="form-control"/>
+                        <div class="d-flex gap-2">
+                            <div class="w-100 d-flex flex-column gap-2">
+                                <span>Age</span>
+                                <input type="number" class="form-control"/>
+                            </div>
+                            <div class="w-100  d-flex flex-column gap-2">
+                                <span>Phone</span>
+                                <input class="form-control"/>
+                            </div>
+                            <div class="w-100  d-flex flex-column gap-2">
+                                <span>Email</span>
+                                <input type="email" class="form-control"/>
+                            </div>
+                        </div>
+                        <span>Description</span>
+                        <textarea class="form-control">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Record Donation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

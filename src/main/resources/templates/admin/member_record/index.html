@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Bible Baptist Ekklesia of Kawit  </title>
+    <title>Bible Baptist Ekklesia of Kawit</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="shortcut icon" type="image/x-icon" th:href="@{/assets/church_logo.jpeg}"/>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" th:href="@{/app-assets/vendor/css/rtl/theme-default-dark.css}"/>
     <link rel="stylesheet" th:href="@{/app-assets/vendor/fonts/boxicons.css}"/>
     <link rel="stylesheet" th:href="@{/app-assets/vendor/fonts/fontawesome.css}"/>
+
     <link rel="stylesheet" th:href="@{assets/dataTable/datatables.min.css}">
 
     <script th:src="@{assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js}"></script>
@@ -31,7 +32,30 @@
                 <div id="frag_container" class="container-xxl flex-grow-1 container-p-y">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="fw-bold">TEST</h5>
+                            <h5 class="fw-bold">Member Record</h5>
+                            <div class="text-end">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_member_modal">Add Member</button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <input class="form-control w-20" placeholder="Search Members" />
+                                <button class="active btn btn-outline-primary">All</button>
+                                <button class="btn btn-outline-primary">Active</button>
+                                <button class="btn btn-outline-primary">Inactive</button>
+                            </div>
+                            <div class="my-2 table-responsive">
+                                <table id="DT_MemberRecord" class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Status</th>
+                                            <th>Join Date</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,6 +64,8 @@
     </div>
 </div>
 </body>
+
+<div th:replace="~{admin/member_record/modals/add_member_modal :: _add_member_modal}"></div>
 
 <!-- Helpers -->
 <script src="" th:src="@{/app-assets/vendor/js/helpers.js}"></script>
@@ -53,5 +79,6 @@
 
 <script th:src="@{/app-assets/vendor/js/menu.js}"></script>
 <script th:src="@{/app-assets/js/main.js}"></script>
+<script th:src="@{/pages/member_record/script.js}"></script>
 
 </html>

@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Bible Baptist Ekklesia of Kawit  </title>
+    <title>Bible Baptist Ekklesia of Kawit </title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="shortcut icon" type="image/x-icon" th:href="@{/assets/church_logo.jpeg}"/>
@@ -31,7 +31,24 @@
                 <div id="frag_container" class="container-xxl flex-grow-1 container-p-y">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="fw-bold">TEST</h5>
+                            <h5 class="fw-bold">Events</h5>
+                            <div class="d-flex justify-content-end text-end">
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add_events_modal">Add Events</button>
+                            </div>
+                            <div class="my-2 table-responsive">
+                                <table id="DT_EventsRecord" class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Location</th>
+                                        <th>Participants</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,6 +57,8 @@
     </div>
 </div>
 </body>
+
+<div th:replace="~{admin/events/modals/add_events_modal :: _add_events_modal}"></div>
 
 <!-- Helpers -->
 <script src="" th:src="@{/app-assets/vendor/js/helpers.js}"></script>
@@ -53,5 +72,6 @@
 
 <script th:src="@{/app-assets/vendor/js/menu.js}"></script>
 <script th:src="@{/app-assets/js/main.js}"></script>
+<script th:src="@{/pages/events/script.js}"></script>
 
 </html>

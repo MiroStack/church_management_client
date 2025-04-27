@@ -1,0 +1,64 @@
+<div th:fragment="_add_leader_modal" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="modal fade" id="add_leader_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="add_leader_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex flex-column">
+                        <h1 class="modal-title fs-5" id="add_leader_modal_label">Add New Leader</h1>
+                        <p class="text-muted">Enter details for the new church leader</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-2">
+                        <span class="text-primary">Personal Information</span>
+                        <span>Full Name</span>
+                        <input class="form-control"/>
+                        <span>Position</span>
+                        <input class="form-control"/>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex flex-column w-100 gap-2">
+                                <span>Email</span>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="d-flex flex-column w-100 gap-2">
+                                <span>Phone</span>
+                                <input class="form-control">
+                            </div>
+                        </div>
+                        <span>Address</span>
+                        <input class="form-control"/>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex flex-column w-100 gap-2">
+                                <span>Date Appointed</span>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="d-flex flex-column w-100 gap-2">
+                                <span>Status</span>
+                                <select class="form-select">
+                                    <option>Active</option>
+                                    <option>Inactive</option>
+                                    <option>On Leave</option>
+                                </select>
+                            </div>
+                        </div>
+                        <span class="text-primary">Additional Information</span>
+                        <span>Biography</span>
+                        <textarea class="form-control"></textarea>
+                        <span>Responsibilities</span>
+                        <textarea class="form-control"></textarea>
+                        <span>Education</span>
+                        <textarea class="form-control"></textarea>
+                        <span>Profile Photo</span>
+                        <input type="file" class="form-control" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add Leader</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
