@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<nav class="mynav"  th:fragment="navbar">
+
+    <div class="brand">
+        <img src="/assets/church_logo.jpeg" alt="church logo">
+        <a class="navbar-brand" href="/">BBEK</a>
+    </div>
+    <div class="nav-ctn">
+        <ul class="nav-list">
+
+            <li class="list-item">
+                <a class="links" href="/" th:classappend="${requestURI == '/' ? 'active' : ''}">HOME</a>
+            </li>
+            <li class="list-item about-list">
+                <a class="links" href="/about" th:classappend="${requestURI == '/about' ? 'active' : ''}"><span>ABOUT</span><ion-icon name="chevron-down-outline"></ion-icon></a>
+                <div class="menu-options about-options">
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/mission">Mission</a></li>
+                        <li><a href="/vision">Vision</a></li>
+                        <li><a href="/church_leaders">Leadership</a></li>
+                        <li><a href="/department_officers">Church Officers</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list-item ministries-list">
+                <a class="links" href="/ministries" th:classappend="${requestURI == '/about' ? 'active' : ''}">MINISTRIES</a>
+
+            </li>
+            <li class="list-item">
+                <a class="links" href="/events" th:classappend="${requestURI == '/about' ? 'active' : ''}">EVENTS</a>
+            </li>
+
+            <li class="list-item">
+                <a class="links" href="/contact" th:classappend="${requestURI == '/about' ? 'active' : ''}">LIVE</a>
+            </li>
+            <li class="list-item">
+                <a class="links" href="/events" th:classappend="${requestURI == '/about' ? 'active' : ''}">GIVE</a>
+            </li>
+            <li class="list-item about-list">
+                <a class="links" href="/static" th:classappend="${requestURI == '/about' ? 'active' : ''}"><span>BE ONE OF US</span><ion-icon name="chevron-down-outline"></ion-icon></a>
+                <div class="menu-options about-options">
+                    <ul>
+                        <li><a href="/requestBaptism">Water Baptism</a></li>
+                        <li><a href="/requestBaptism">Send a Prayer</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="login">
+        <div class="socials-ctn">
+            <i class="nav-icon fa-brands fa-facebook-f"></i>
+            <i class="nav-icon fa-brands fa-instagram"></i>
+            <i class="nav-icon fa-brands fa-youtube"></i>
+            <i class="nav-icon fa-solid fa-envelope"></i>
+        </div>
+        <button class="login-btn">Login</button>
+    </div>
+    <div class="burger-menu">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</nav>
+
+
+</body>
+</html>

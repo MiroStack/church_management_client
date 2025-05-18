@@ -16,25 +16,39 @@
 .contact-section > .contact-header > p{
     font-size: var(--size-s);
 }
-
-.contact-section > .contact-card{
+.contact-card{
+    display: flex;
+    gap: 1em;
+}
+.contact-card > .contact-information{
     height: 28em;
     width: 24em;
-    padding:1em;
+
+}
+.contact-card > .contact-information ,  .contact-card > .contact-form, .contact-card > .google-map{
     background: rgba( 155, 155, 155, 0.1 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 8px;
+    margin-top: 1em;
+    padding:1em;
 }
 .contact-section > .contact-card > .contact-information > h2{
     font-size: var(--size-m);
 }
 .contact-section > .contact-card > .contact-information > p{
     font-size: var(--size-sm);
+    color:var(--grey200);
 }
 .contact-section > .contact-card > .contact-information > div{
-
+    display: flex;
+    align-items: start;
+    gap: 1em;
+    padding: 8px;
 }
-.contact-section > .contact-card > .contact-information > div > i{
-    background-color: green;
+.contact-section > .contact-card > .contact-information > div > span.contact-icons{
+    color: var(--skyblue);
+}
+.contact-section > .contact-card > .contact-information > div > div> p{
+    color: var(--grey200);
 }

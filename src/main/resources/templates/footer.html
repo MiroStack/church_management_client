@@ -2,61 +2,86 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <body>
-   <section th:fragment="footer-section">
-
+   <section class="footer-section" th:fragment="footer-section">
        <div class="footer-wrap">
            <div class="mission">
                <div class="brand-logo">
                    <img src="/assets/church_logo.jpeg" alt="church logo">
-                   <h4 class="brand-label" href="/">BIBLE BAPTIST EKKLESIA OF KAWIT</h4>
+                   <div class="brand-label">
+                       <h4  href="/">BIBLE BAPTIST</h4>
+                       <p> EKKLESIA OF KAWIT</p>
+                   </div>
+
                </div>
                <p class="mission-statement">
-                   Proclaiming the Gospel of Jesus Christ and making disciples through Biblical teaching and fellowship.
+                   An independent Baptist church proclaiming the Gospel of Jesus Christ and making disciples through Biblical teaching.
                </p>
-               <div class="social-icons">
-                   <ion-icon name="logo-facebook"></ion-icon>
-                   <ion-icon name="logo-instagram"></ion-icon>
-                   <ion-icon name="logo-youtube"></ion-icon>
+               <div class="socials-footer">
+                   <i class="nav-icon fa-brands fa-facebook-f"></i>
+                   <i class="nav-icon fa-brands fa-instagram"></i>
+                   <i class="nav-icon fa-brands fa-youtube"></i>
+                   <i class="nav-icon fa-solid fa-envelope"></i>
                </div>
            </div>
 
                <ul class="quick-list">
                    <h6 class="footer-title">Quick Links</h6>
-                   <li><a href="/">Home</a></li>
                    <li><a href="/about">About Us</a></li>
                    <li><a href="/ministries">Ministries</a></li>
                    <li><a href="/events">Events</a></li>
-                   <li><a href="/contact">Contact</a></li>
+                   <li><a href="/contact">Live Worship</a></li>
+                   <li><a href="/contact">Be One of Us</a></li>
                </ul>
-           <div class="service-times">
-               <h6 class="footer-title">Service Times</h6>
-               <p>Sunday Worship: 9:00 AM</p>
-               <p>Sunday School: 10:30 AM</p>
-               <p>Wednesday Bible Study: 6:00 PM</p>
-               <p>Youth Fellowship: Friday 7:00 PM</p>
-           </div>
+           <div></div>
            <div class="contact-details">
                <h6 class="footer-title">Contact Us</h6>
                <div>
-                   <span></span>
-                   <span>123 Binakayan St., Kawit, Cavite, Philippines</span>
+                   <i class="fa-solid fa-location-dot"></i>
+                   <span>123 Binakayan St., Kawit, Cavite,<br> Philippines</span>
                </div>
                <div>
-                   <span></span>
+                   <i class="fa-solid fa-phone"></i>
                    <span>+63 912 345 6789</span>
                </div>
                <div>
-                   <span></span>
+                   <i class="fa-solid fa-envelope"></i>
                    <span>info@bbek.org</span>
                </div>
+           </div>
+
+           <div class="service-times">
+               <h6 class="footer-title">Service Times</h6>
+
+               <div>
+                   <i class="fa-solid fa-clock"></i>
+                   <div>
+                       <p class="service-title">Sunday Worship</p>
+                       <p class="service-schedule">9:00 AM - 10:30 AM</p>
+                   </div>
+               </div>
+
+               <div>
+                   <i class="fa-solid fa-clock"></i>
+                   <div>
+                       <p class="service-title">Prayer Meeting</p>
+                       <p class="service-schedule">Monday, 7:00 PM - 8:30 PM</p>
+                   </div>
+               </div>
+
+               <div>
+                   <i class="fa-solid fa-clock"></i>
+                   <div>
+                       <p class="service-title">Bible Study</p>
+                       <p class="service-schedule">Wednesday, 7:00 PM - 8:30 PM</p>
+                   </div>
+
+               </div>
+
+
            </div>
        </div>
        <div class="copyright-wrap">
                <p>© 2025 Bible Baptist Ekklesia of Kawit. All rights reserved.</p>
-               <div class="legal-wrap">
-                   <a class="legal-link">Privacy Policy</a>
-                   <a class="legal-link">Terms of Service</a>
-               </div>
        </div>
    </section>
 </body>

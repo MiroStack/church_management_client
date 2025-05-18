@@ -2,25 +2,42 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <body>
-<section class="hero-section" th:fragment="hero-section">
-    <h1>
-        Welcome to Bible Baptist Ekklesia of Kawit
-    </h1>
-    <h3>
-        A place of worship, community, and spiritual growth for all.
-    </h3>
-    <div class="info-ctn">
-        <a href="/about" class="hero-btn learn-more" >
-            Learn More
-        </a>
+<div class="hero-wrapper" th:fragment="hero-section">
+    <section class="hero-section" >
+        <h1>
+            BIBLE BAPTIST EKKLESIA
+        </h1>
+        <ul>
+            <li>
+                nurturing faith
+            </li>
+            <li>
+                building community
+            </li>
+            <li>
+                sharing God's love
+            </li>
+        </ul>
+        <div class="info-ctn">
+            <a href="/about" class="hero-btn plan" >
+                <span>PLAN YOUR VISIT </span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
 
 
-        <a href="/contact" class="hero-btn contact-us" >
-            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-            <span>Contact Us</span>
-        </a>
+    </section>
+    <div class="wave-container">
+        <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#ffffff" fill-opacity="1" d="M0,160
+                C 360,80 1080,240 1440,160
+                L1440,320
+                L0,320
+                Z" />
+        </svg>
 
     </div>
-</section>
+</div>
 </body>
 </html>

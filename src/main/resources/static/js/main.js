@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",  ()=>{
    const burgerBtn = document.querySelector(".burger-menu");
    const sideClosed = document.querySelector(".closed-icon");
    const loginBtn = document.querySelectorAll(".login-btn");
-    const registrationBtn = document.querySelector(".registration-btn");
+   const registrationBtn = document.querySelector(".registration-btn");
    const loginForm = document.querySelector(".login-wrap");
    const registrationForm = document.querySelector(".registration-wrap");
    const closedLogin = document.querySelector(".closed-login");
@@ -52,4 +52,13 @@ document.addEventListener("DOMContentLoaded",  ()=>{
        root.classList.remove("dimmed");
        document.body.style.overflow = '';
    });
+
+    window.addEventListener('scroll', function () {
+        const nav = document.querySelector('.mynav');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
 });

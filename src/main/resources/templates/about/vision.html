@@ -15,32 +15,62 @@
 <div th:replace="~{loginform :: loginForm}"></div>
 <div th:replace="~{sidenav :: sidenavigation}"></div>
 <div class="root">
-    <nav th:replace="~{fragments :: navbar}"></nav>
+    <nav th:replace="~{navigation :: navbar}"></nav>
     <section class="about-common-section">
         <div class="header">
-            <h1 >Vision</h1>
+            <h1 >Our Vision</h1>
             <h3 >Bible Baptist Ekklesia of Kawit</h3>
         </div>
-    </section>
-    <section class="content-section">
-        <img src="/images/img5.jpeg">
-        <div class="content-statement">
-            <p>"We are independent Bible Baptist Church fulfilling and carry-out Christ great commission to propagate the Gospel to all mankind and win souls to Christ as found in Matthew 28:19-20. Firmly preach the word of truth into the world. The bible is the final authority of our faith and practice and pure foundation of doctrines."</p>
-            <p>Our vision is to be a church that:
-                <br>Glorifies God in all that we do
-                <br>Reaches the lost with the Gospel of Jesus Christ
-                <br>Disciples believers to spiritual maturity
-                <br>Equips the saints for the work of ministry
-                <br>Impacts our community with the love of Christ
-                <br>Plants new churches to expand God's kingdom
-                <br>We envision a church where every member is actively involved in ministry,
-                <br>using their spiritual gifts to serve God and others, and where lives are transformed by the power of the Gospel.
-            </p>
-
-            <span><a href="/about">Back to About</a></span>
+        <div class="wave-container">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160
+                C 360,80 1080,240 1440,160
+                L1440,320
+                L0,320
+                Z" />
+            </svg>
         </div>
-
     </section>
+    <section class="about-info-section">
+        <div>
+            <img src="/images/img5.jpeg">
+            <div>
+                <h3>
+                    "We are independent Bible Baptist Church fulfilling and carry-out Christ great commission to propagate the Gospel to all mankind and win souls to Christ as found in Matthew 28:19-20. Firmly preach the word of truth into the world. The bible is the final authority of our faith and practice and pure foundation of doctrines."
+                </h3>
+                <br>
+                <div>
+                    <h3>
+                        Our vision is to be a church that:
+                    </h3>
+                    <p><i class="fa-solid fa-circle"></i><span>Glorifies God in all that we do</span></p>
+                    <p><i class="fa-solid fa-circle"></i><span>Reaches the lost with the Gospel of Jesus Christ</span></p>
+                    <p><i class="fa-solid fa-circle"></i><span>Disciples believers to spiritual maturity</span></p>
+                    <p><i class="fa-solid fa-circle"></i><span>Equips the saints for the work of ministry</span></p>
+                    <p><i class="fa-solid fa-circle"></i><span>Impacts our community with the love of Christ</span></p>
+                    <p><i class="fa-solid fa-circle"></i><span>Plants new churches to expand God's kingdom</span></p>
+                </div>
+                <br>
+                <h5>
+                    We envision a church where every member is actively involved in ministry, using their spiritual gifts to serve God and others, and where lives are transformed by the power of the Gospel.
+                </h5>
+                <a>Back to About</a>
+            </div>
+        </div>
+    </section>
+    <section class="about-direction-section">
+        <h2>Join Us This Sunday</h2>
+        <p>
+            We'd love to have you join us for worship this Sunday.<br> Come experience the love and community at Bible Baptist Ekklesia of Kawit.
+        </p>
+        <a>
+               <span>
+                   GET DIRECTIONS
+               </span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
+
     <section th:replace="~{footer :: footer-section}"></section>
 </div>
 <script src="/js/main.js"></script>

@@ -15,29 +15,63 @@
     <div th:replace="~{loginform :: loginForm}"></div>
     <div th:replace="~{sidenav :: sidenavigation}"></div>
    <div class="root">
-       <nav th:replace="~{fragments :: navbar}"></nav>
+       <nav th:replace="~{navigation :: navbar}"></nav>
        <section class="about-common-section">
                <div class="header">
-                   <h1 >Mission</h1>
+                   <h1 >Our Mission</h1>
                    <h3 >Bible Baptist Ekklesia of Kawit</h3>
                </div>
+           <div class="wave-container">
+               <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                   <path fill="#ffffff" fill-opacity="1" d="M0,160
+                C 360,80 1080,240 1440,160
+                L1440,320
+                L0,320
+                Z" />
+               </svg>
+           </div>
        </section>
-       <section class="content-section">
-               <img src="/images/img4.jpeg">
-               <div class="content-statement">
-                      <p>"We are the church, we are committed to love the Lord with all thy heart, with all thy soul and with all thy mind. Make disciples to Christ, teach, train, build and equip every believers to become soul winners and Godly leaders of the society in order to help for transforming community with fear of God and believer of Christ Jesus, ministering people and planting churches to every places."</p>
-                      <p> Our mission is rooted in the Great Commission given by Jesus Christ in Matthew 28:19-20: "Go therefore and make disciples of all the nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age."</p>
-                      <p>We strive to fulfill this mission through:
-                      <br>Evangelism and outreach to our community
-                      <br>Discipleship and spiritual growth programs
-                      <br>Training and equipping believers for ministry
-                      <br>Supporting missions work locally and globally
-                      <br>Serving our community with the love of Christ</p>
+       <section class="about-info-section">
+           <div>
+               <img src="/images/events_lp.jpeg">
+               <div>
+                   <h3>
+                       "We are the church, we are committed to love the Lord with all thy heart, with all thy soul and with all thy mind. Make disciples to Christ, teach, train, build and equip every believers to become soul winners and Godly leaders of the society in order to help for transforming community with fear of God and believer of Christ Jesus, ministering people and planting churches to every places."
+                   </h3>
+                   <br>
+                   <h5>
+                       Our mission is rooted in the Great Commission given by Jesus Christ in Matthew 28:19-20: "Go therefore and make disciples of all the nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age."
+                   </h5>
+                   <br>
 
-                   <span><a href="/about">Back to About</a></span>
+
+                    <div>
+                        <h3>
+                            We strive to fulfill this mission through:
+                        </h3>
+                        <p><i class="fa-solid fa-circle"></i><span>Evangelism and outreach to our community</span></p>
+                        <p><i class="fa-solid fa-circle"></i><span>Discipleship and spiritual growth programs</span></p>
+                        <p><i class="fa-solid fa-circle"></i><span>Training and equipping believers for ministry</span></p>
+                        <p><i class="fa-solid fa-circle"></i><span>Supporting missions work locally and globally</span></p>
+                        <p><i class="fa-solid fa-circle"></i><span>Serving our community with the love of Christ</span></p>
+                    </div>
+                   <a>Back to About</a>
                </div>
-
+           </div>
        </section>
+       <section class="about-direction-section">
+           <h2>Join Us This Sunday</h2>
+           <p>
+               We'd love to have you join us for worship this Sunday.<br> Come experience the love and community at Bible Baptist Ekklesia of Kawit.
+           </p>
+           <a>
+               <span>
+                   GET DIRECTIONS
+               </span>
+               <i class="fa-solid fa-arrow-right"></i>
+           </a>
+       </section>
+
        <section th:replace="~{footer :: footer-section}"></section>
    </div>
    <script src="/js/main.js"></script>

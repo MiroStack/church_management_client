@@ -17,67 +17,134 @@
     <div th:replace="~{loginform :: loginForm}"></div>
     <div th:replace="~{sidenav :: sidenavigation}"></div>
     <div class="root">
-        <nav th:replace="~{fragments :: navbar}"></nav>
+        <nav th:replace="~{navigation :: navbar}"></nav>
          <section class="about-section about-common-h">
-             <div class="about-header ">
-                 <h1 >About Bible Baptist Ekklesia of Kawit</h1>
-                 <h3 >Our mission, vision, and the people who make it all happen.</h3>
+             <div class="about-header">
+                 <h1 >About Our Church</h1>
+                 <h3 >Serving Christ and the community since 1985</h3>
              </div>
         </section>
-        <section class="about-card-section">
-                <div class="card">
-                    <img src="/images/img2.jpg">
-                    <div class="card-info">
-                        <h3>About Us</h3>
-                        <p>Learn about our church's identity and purpose</p>
-                        <span class="card-link"><a href="/about">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
+        <section class="story-section">
+            <div class="story-details">
+                <div>
+                   <h2>Our Story</h2>
+                    <p>Bible Baptist Ekklesia of Kawit was founded in 1985 with a vision to spread the Gospel throughout Kawit and beyond. What began as a small gathering of believers has grown into a vibrant community of faith dedicated to worship, discipleship, and service.</p>
+                    <br><p>Through the years, our church has remained committed to the inerrant Word of God, teaching Biblical principles and helping people develop a personal relationship with Jesus Christ. We've seen countless lives transformed through the power of God's love and grace.</p>
+                    <br><p>Today, Bible Baptist Ekklesia of Kawit continues to be a beacon of hope in our community, offering various ministries and programs designed to meet the spiritual, emotional, and physical needs of people from all walks of life.</p>
+                </div>
+                <div class="beliefs-details">
+                    <h2>What We Believe</h2>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <div>
+                            <h3>The Bible</h3>
+                            <p>We believe the Bible is the inspired, inerrant Word of God and our final authority for faith and practice.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <div>
+                            <h3>God</h3>
+                            <p>We believe in one God, eternally existing in three persons: Father, Son, and Holy Spirit.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <div>
+                            <h3>Jesus Christ</h3>
+                            <p>We believe in the deity of Jesus Christ, His virgin birth, sinless life, atoning death, bodily resurrection, and His coming return.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <div>
+                            <h3>Salvation</h3>
+                            <p>We believe salvation is by grace through faith in Jesus Christ alone, not by works.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="info-card-wrapper">
+                <div class="info-card">
+                   <div>
+                       <h2>Sunday Services</h2>
+                       <div class="info-schedule">
+                           <h3>Sunday School</h3>
+                           <p>9:00 AM - 10:00 AM</p>
+                       </div>
+                       <div class="info-schedule">
+                           <h3>Morning Worship</h3>
+                           <p>10:30 AM - 12:00 PM</p>
+                       </div>
+                       <div class="info-schedule">
+                           <h3>Evening Service</h3>
+                           <p>6:00 PM - 7:30 PM</p>
+                       </div>
+                   </div>
+                </div>
+                <div class="info-card">
+                   <div>
+                       <h2>Sunday Services</h2>
+                       <div class="info-schedule">
+                           <h3>Address</h3>
+                           <p>123 Church Street, Kawit, Cavite</p>
+                       </div>
+                       <div class="info-schedule">
+                           <h3>Phone</h3>
+                           <p>(046) 123-4567</p>
+                       </div>
+                       <div class="info-schedule">
+                           <h3>Email</h3>
+                           <p>info@bbek.org</p>
+                       </div>
+                   </div>
+                </div>
+                <div class="info-card">
+                     <img src="/images/placeholder.svg">
+                </div>
+
+            </div>
+
+        </section>
+        <section class="leaders-section">
+            <h2>Our Leadership</h2>
+            <div class="leaders-details">
+                  <div>
+                      <img src="/images/placeholder.svg">
+                      <div>
+                          <h3>Pastor John Doe</h3>
+                          <p>Senior Pastor</p>
+                      </div>
+                  </div>
+                <div>
+                    <img src="/images/placeholder.svg">
+                    <div>
+                        <h3>Pastor Jane Smith</h3>
+                        <p>Associate Pastor</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/images/placeholder.svg">
+                    <div>
+                        <h3>Deacon Robert Johnson</h3>
+                        <p>Head Deacon</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/images/placeholder.svg">
+                    <div>
+                        <h3>Elder Mary Williams</h3>
+                        <p>Elder</p>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="/images/img4.jpeg">
-                    <div class="card-info">
-                        <h3>Mission</h3>
-                        <p>Our commitment to love the Lord and make disciples</p>
-                        <span class="card-link"><a href="/mission">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
-                    </div>
-                </div>
+            </div>
 
-                <div class="card">
-                    <img src="/images/img5.jpeg">
-                    <div class="card-info">
-                        <h3>Vision</h3>
-                        <p>Our vision for fulfilling Christ's Great Commission</p>
-                        <span class="card-link"><a href="/vision">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/images/img6.jpeg">
-                    <div class="card-info">
-                        <h3>Church Leaders</h3>
-                        <p>Meet the dedicated servants who guide our church</p>
-                        <span class="card-link"><a href="/church_leaders">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/images/img3.jpg">
-                    <div class="card-info">
-                        <h3>History</h3>
-                        <p>The story of our church from our beginnings to today</p>
-                        <span class="card-link"><a href="/history">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/assets/church_logo.jpeg" style="padding: 1em 5em 0 5em">
-                    <div class="card-info">
-                        <h3>Department Officers</h3>
-                        <p>Meet our dedicated department leaders serving in various ministries</p>
-                        <span class="card-link"><a href="/department_officers">Learn more <i class="fa-solid fa-arrow-right"></i></a></span>
-                    </div>
-                </div>
         </section>
         <section th:replace="~{footer :: footer-section}"></section>
     </div>

@@ -15,41 +15,67 @@
 <div th:replace="~{loginform :: loginForm}"></div>
 <div th:replace="~{sidenav :: sidenavigation}"></div>
 <div class="root">
-    <nav th:replace="~{fragments :: navbar}"></nav>
+    <nav th:replace="~{navigation :: navbar}"></nav>
     <section class="about-common-section">
         <div class="header">
-            <h1 >Church Leaders</h1>
+            <h1 >Church Leadership</h1>
             <h3 >Bible Baptist Ekklesia of Kawit</h3>
         </div>
+        <div class="wave-container">
+            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160
+                C 360,80 1080,240 1440,160
+                L1440,320
+                L0,320
+                Z" />
+            </svg>
+        </div>
     </section>
-    <section class="content-section">
-        <div class="content-avatar">
-            <div>
+    <section class="leadership-section">
+      <div class="leadership-header">
+          <p>Our church is led by dedicated servants who are committed to shepherding the flock and equipping the saints for the work of ministry. They provide spiritual guidance, pastoral care, and administrative leadership for our congregation.</p>
+          <p>Our leadership team also includes deacons, ministry leaders, and administrative staff who work together to facilitate the various aspects of church life and ministry.</p>
+      </div>
+       <div class="leaders-wrapper">
+           <div class="leaders-card">
                 <img src="/images/img8.png">
-                <h2>Rev. Rodolfo Mojica</h2>
-                <p>Senior Pastor</p>
-            </div>
-            <div>
-                <img src="/images/img6.jpeg">
-                <h2>Rev. Fresco Q. Sulapas</h2>
-                <p>Minister/Resident Pastor</p>
-            </div>
-        </div>
+               <div>
+                   <h3>Rev. Rodolfo Mojica</h3>
+                   <h5>Sending Pastor</h5>
+               </div>
+               <p>
+                   Pastor Rodolfo Mojica serves as our Sending Pastor, providing overall leadership and vision for the church. He is responsible for preaching, teaching, and pastoral care, as well as overseeing the various ministries of the church.
+               </p>
+           </div>
 
-        <div class="content-statement">
-            <p>"Our church is led by dedicated servants who are committed to shepherding the flock and equipping the saints for the work of ministry. They provide spiritual guidance, pastoral care, and administrative leadership for our congregation."</p>
-            <p>Rev. Rodolfo Mojica - Sending Pastor
-                <br>Pastor Rodolfo Mojica serves as our Sending Pastor, providing overall leadership and vision for the church. He is responsible for preaching, teaching, and pastoral care, as well as overseeing the various ministries of the church.
-            </p>
-            <p>Rev. Fresco Q. Sulapas - Senior Pastor
-                <br>Pastor Fresco Q. Sulapas serves as our Senior Pastor, assisting in preaching, teaching, and pastoral care. He works closely with the Sending Pastor to ensure that the spiritual needs of the congregation are met.
-                Our leadership team also includes deacons, ministry leaders, and administrative staff who work together to facilitate the various aspects of church life and ministry.
-            </p>
+           <div class="leaders-card">
+               <img src="/images/img6.jpeg">
+               <div>
+                   <h3>Rev. Fresco Q. Sulapas</h3>
+                   <h5>Senior Pastor</h5>
+               </div>
+               <p>
+                   Pastor Fresco Q. Sulapas serves as our Senior Pastor, assisting in preaching, teaching, and pastoral care. He works closely with the Sending Pastor to ensure that the spiritual needs of the congregation are met.
+               </p>
+           </div>
 
-            <span><a href="/about">Back to About</a></span>
-        </div>
+       </div>
+        <a>Back to About</a>
 
     </section>
+    <section class="about-direction-section">
+        <h2>Join Us This Sunday</h2>
+        <p>
+            We'd love to have you join us for worship this Sunday.<br> Come experience the love and community at Bible Baptist Ekklesia of Kawit.
+        </p>
+        <a>
+               <span>
+                   GET DIRECTIONS
+               </span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
+
     <section th:replace="~{footer :: footer-section}"></section>
 </div>
 <script src="/js/main.js"></script>
