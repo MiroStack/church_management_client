@@ -89,6 +89,9 @@
     font-weight: 400;
 }
 .follow-section{
+    height: auto;
+    padding: 8em;
+    text-align: center;
     background-color: var(--lightgrey100);
     gap: 1em;
 }
@@ -111,4 +114,26 @@
     font-size: var(--size-xsm);
     font-weight: 400;
     color: white;
+}
+
+@media only screen and (max-width: 599px) {
+    .follow-section{
+        padding: 4em;
+
+    }
+}
+/* Devices between 600px and 849px (portrait tablets & large phones) */
+@media only screen and (min-width: 600px) and (max-width: 849px) {
+
+
+}
+
+/* Devices 850px and up (small desktops and tablets in landscape) */
+@media only screen and (min-width: 850px) {
+
+}
+
+/* Devices 1200px and up (large desktops/laptops) */
+@media only screen and (min-width: 1200px) and (max-width: 1600px){
+
 }

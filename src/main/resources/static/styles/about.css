@@ -1,10 +1,10 @@
 .about-section, .leaders-section, .story-section{
-    padding: 0 20em;
+    padding: 0 10em;
     background-color: var(--blue700);
     color: var(--white200);
 }
 .about-header{
-    height: 22em;
+    height: 100%;
     width: 100%;
     position: relative;
     background-size: cover;
@@ -159,12 +159,11 @@
 .about-info-section{
     height: auto;
     background-color: var(--lightgrey100);
-    padding: 5em 20em;
+    padding: 5em 10em;
 }
 .about-info-section > div{
-    height: auto;
+    height: 60em;
     width: 100%;
-
     border-radius: 8px;
     background-color: var(--white500);
 }
@@ -183,6 +182,7 @@
 }
 .about-info-section > div > div > h3, .about-info-section > div > div > div > h3{
     font-weight: 500;
+    font-size: var(--size-sm);
 }
  .about-info-section > div > div > div {
      display: flex;
@@ -192,7 +192,7 @@
      gap: .5em;
 }
 .about-info-section > div > div > div > p  {
-    font-size: var(--size-sm);
+    font-size: var(--size-xsm);
 }
 .about-info-section > div > div > div > p > i {
     color: var(--blue200);
@@ -208,6 +208,7 @@
 }
 .about-info-section > div > div > a{
     margin: auto;
+    margin-top: 2em;
     border: 1px solid var(--grey200);
     background-color: var(--white200);
     border-radius: 8px;
@@ -215,8 +216,8 @@
     cursor: pointer;
 }
 .about-direction-section{
-    height: 40vh;
-    padding: 0 20em;
+    height: auto;
+    padding: 4em 10em;
     text-align: center;
     gap: 1em;
 }
@@ -241,7 +242,7 @@
 .leadership-section, .department-section{
     height: auto;
     background-color: var(--lightgrey100);
-    padding: 1em 20em;
+    padding: 4em 10em;
 }
 .leadership-section > a, .department-section > a{
     margin: 3em 0;
@@ -325,6 +326,12 @@
         padding: 1em;
 
     }
+    .about-info-section > div{
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+        background-color: var(--white500);
+    }
     .about-section > .about-header{
         height: 30em;
         width: 100%;
@@ -354,6 +361,9 @@
         justify-content: center;
         padding: 2em 0;
     }
+    .leaders-wrapper > .leaders-card{
+        height: 44em;
+    }
     .about-direction-section > h2{
         font-size: var(--size-s);
     }
@@ -361,6 +371,7 @@
         font-size: var(--size-xsm);
     }
     .leaders-wrapper{
+        height: auto;
         display: grid;
         grid-template-columns: auto ;
         grid-template-rows: auto ;
@@ -400,6 +411,11 @@
         justify-content: center;
         padding: 2em 0;
     }
+    .leaders-wrapper > .leaders-card{
+        height: 44em;
+        width: 34em;
+    }
+
     .about-direction-section > h2{
         font-size: var(--size-m);
     }

@@ -162,6 +162,8 @@
     transition: all ease-in-out 500ms;
 }
 
+
+
 .mynav.scrolled{
     position: fixed;
     background-color: var(--white200);
@@ -184,7 +186,9 @@
     color: var(--black200);
     font-weight: 600;
 }
-
+.mynav > .login > .socials-ctn{
+    display: none;
+}
 
 .nav-list{
     display: flex;
@@ -588,10 +592,7 @@ ul.quick-list > li > a:hover{
     color: var(--grey200);
 }
 
-
-
 .login-wrap{
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -599,20 +600,23 @@ ul.quick-list > li > a:hover{
     height: 35em;
     width: 30em;
     background-color: var(--white200);
-    z-index: 100;
     border-radius: 8px;
     padding: 2em;
-    z-index: 3000;
-    transition: all ease-in-out 800ms;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.8s ease;
+    z-index:3;
 }
 .showlogin{
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 .closed-login{
     font-size: var(--size-m);
     display: flex;
     justify-content: end;
     align-items: center;
+
 }
 .login-header{
     display: flex;
@@ -638,6 +642,7 @@ ul.quick-list > li > a:hover{
     align-items: start;
     flex-direction: column;
    margin: 1em 0;
+
 }
 .login-form > .input-outline{
     width: 100%;
@@ -883,11 +888,12 @@ ul.quick-list > li > a:hover{
 
     }
 
+
     .mynav > .brand > img{
        height: 2em;
     }
     .mynav > .brand > a{
-        height: 2em;
+        font-size: var(--size-xsm);
     }
     ul li a.links{
 

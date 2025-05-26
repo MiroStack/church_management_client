@@ -58,11 +58,12 @@
     display: grid;
     grid-template-columns: auto auto;
     gap:2em 3em;
+    padding: 4em 10em;
 }
 .events-card-section .events-card-wrapper > .events-card {
     position: relative;
     height: 30em;
-    width: 34em;
+    width: 28em;
     background-color: var(--white500);
     border-radius: 8px;
     border: 1px solid var(--lightgrey200);
