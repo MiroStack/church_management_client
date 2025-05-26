@@ -172,6 +172,30 @@
 }
 
 /* Devices 1200px and up (large desktops/laptops) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1600px){
+    .details-card{
+        height: 24em;
+        width: 20em;
+    }
 
+
+    .details-card > .card-info >.details-icon{
+        height: 2em;
+        width: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba( 74, 144, 226, 0.25 );
+        -webkit-backdrop-filter: blur( 1px);
+        border-radius: 100%;
+        padding: 1em;
+        color: var(--blue200);
+        margin: 0 0 1em 0;
+    }
+    .details-card > .card-info > h3{
+        font-size: var(--size-s);
+    }
+    .details-card > .card-info > p, .details-card > .card-info > a{
+        font-size: var(--size-xsm);
+    }
 }

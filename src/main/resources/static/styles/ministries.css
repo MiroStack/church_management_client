@@ -1,11 +1,11 @@
 
-.events-section{
+.ministries-section{
     position: relative;
     height: 60vh;
     padding: 0;
     border-bottom: 1px solid var(--grey200);
 }
-.events-section > .header{
+.ministries-section > .header{
     position: relative;
     height: 100%;
     width: 100%;
@@ -18,11 +18,11 @@
     background-position:center ;
     background-repeat: no-repeat;
     background-clip: border-box;
-    background-image: url("/images/events.jpg");
+    background-image: url("/images/hero.jpg");
 }
 
 
-.events-section > .header::before {
+.ministries-section > .header::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -30,69 +30,64 @@
     z-index: 1;
 }
 
-.events-section > .header > * {
+.ministries-section > .header > * {
     z-index: 2;
     position: relative;
     color: var(--white200);
 }
-.events-section > .header > img{
+.ministries-section > .header > img{
     filter: brightness(80%);
 }
-.events-section > .header > h1{
+.ministries-section > .header > h1{
     font-size: var(--size-xl);
 }
-
-.events-section > .header > h3{
+.ministries-section > .header > h3{
     font-weight: 400;
     font-size: var(--size-m);
 }
-.events-card-section{
+.ministries-card-section{
     height: auto;
     background-color: var(--lightgrey100);
 }
-.events-card-section > h2{
-   font-size: 1.8em;
-    margin: 1em 0;
-}
-.events-card-section > .events-card-wrapper{
+.ministries-card-section > .ministries-card-wrapper{
     display: grid;
-    grid-template-columns: auto auto;
-    gap:2em 3em;
+    grid-template-columns: auto auto auto;
+    gap:3em;
 }
-.events-card-section .events-card-wrapper > .events-card {
+.ministries-card-section .ministries-card-wrapper > .ministries-card {
     position: relative;
-    height: 30em;
-    width: 34em;
+    height: 34em;
+    width: 24em;
     background-color: var(--white500);
     border-radius: 8px;
     border: 1px solid var(--lightgrey200);
 }
-.events-card-section .events-card-wrapper > .events-card > img{
+.ministries-card-section .ministries-card-wrapper > .ministries-card > img{
     height: 60%;
     width: 100%;
     object-fit: cover;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
-.events-card-section .events-card-wrapper > .events-card > .events-info{
+.ministries-card-section .ministries-card-wrapper > .ministries-card > .ministries-info{
     padding: 1em;
     display: flex;
     flex-direction: column;
     gap:1em;
 }
-.events-card-section .events-card-wrapper > .events-card > .events-info > div> h3{
+.ministries-card-section .ministries-card-wrapper > .ministries-card > .ministries-info > div> h3{
     font-size: var(--size-s);
     font-weight: 600;
 }
-.events-card-section .events-card-wrapper > .events-card > .events-info >div > p{
+.ministries-card-section .ministries-card-wrapper > .ministries-card > .ministries-info >div > p{
     font-size: var(--size-sm);
     color: var(--grey500);
 }
-.events-card-section .events-card-wrapper > .events-card > .events-info >div > p > i{
+.ministries-card-section .ministries-card-wrapper > .ministries-card > .ministries-info >div > p > i{
     margin-right: 8px;
 }
 
-.events-card-section .events-card-wrapper > .events-card > .events-card-action{
+.ministries-card-section .ministries-card-wrapper > .ministries-card > .ministries-card-action{
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -106,7 +101,7 @@
     height: 4em;
     border: 1px solid var(--lightgrey200);
 }
-.events-card-section .events-card-wrapper > .events-card > .events-card-action > a{
+.ministries-card-section .ministries-card-wrapper > .ministries-card > .ministries-card-action > a{
     padding: .8em 2em;
     background-color: var(--white500);
     border-radius: 8px;
@@ -116,7 +111,7 @@
     font-size: var(--size-xsm);
 
 }
-.events-card-section .events-card-wrapper > .events-card > .events-card-action > a.jm-btn{
+.ministries-card-section .ministries-card-wrapper > .ministries-card > .ministries-card-action > a.jm-btn{
     padding: .8em 2em;
     background-color: var(--blue200);
     color: var(--white500);
@@ -124,10 +119,10 @@
 }
 /* Devices up to 599px (small phones) */
 @media only screen and (max-width: 599px) {
-    .events-card-section{
+    .ministries-card-section{
         height: auto;
     }
-    .events-card-section > .events-card-wrapper{
+    .ministries-card-section > .ministries-card-wrapper{
         grid-template-columns:  auto;
     }
 
@@ -138,7 +133,7 @@
 /* Devices between 600px and 849px (portrait tablets & large phones) */
 @media only screen and (min-width: 600px) and (max-width: 849px) {
 
-    .events-card-section > .events-card-wrapper{
+    .ministries-card-section > .ministries-card-wrapper{
         grid-template-columns:  auto auto;
         gap: 1em;
     }

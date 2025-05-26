@@ -1,0 +1,114 @@
+
+.live-section{
+    position: relative;
+    height: 60vh;
+    padding: 0;
+    border-bottom: 1px solid var(--grey200);
+}
+.live-section > .header{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: url("/images/placeholder.svg");
+}
+
+
+.live-section > .header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 1, 0.5);
+    z-index: 1;
+}
+
+.live-section > .header > * {
+    z-index: 2;
+    position: relative;
+    color: var(--white200);
+}
+.live-section > .header > img{
+    filter: brightness(80%);
+}
+.live-section > .header > h1{
+    font-size: var(--size-xl);
+}
+
+.live-section > .header > h3{
+    font-weight: 400;
+    font-size: var(--size-m);
+}
+.live-tv-section{
+    height: auto;
+}
+
+.live-tv-section > a {
+    background-color: var(--white500);
+    padding: .4em 18em;
+    border: 4px solid var(--white200);
+    border-radius: 8px;
+}
+.live-tv-section > .live-wrapper {
+    height: 28em;
+    width: 48em;
+    margin: 2em 0;
+   background-color: var(--primary);
+    color: var(--white200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border-radius: 8px;
+}
+.live-tv-section > .live-wrapper > .live-badge {
+    background-color: var(--red200);
+    padding: .3em 1em;
+    border-radius: 1em;
+}
+.live-tv-section > .live-wrapper > h3 {
+    font-size: var(--size-m);
+    font-weight: 500;
+}
+.live-tv-section > .live-wrapper > .watch-btn{
+    padding: 1em 2em;
+    border-radius: 1em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    background-color: var(--blue200);
+    font-size: var(--size-xsm);
+    font-weight: 400;
+}
+.follow-section{
+    background-color: var(--lightgrey100);
+    gap: 1em;
+}
+.follow-section > h2{
+    font-size: var(--size-l);
+    font-weight: 600;
+}
+.follow-section > h4{
+    font-size: var(--size-sm);
+    font-weight: 500;
+    color: var(--secondary);
+}
+.follow-section > a{
+    padding: 1em 2em;
+    border-radius: 1em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    background-color: var(--blue200);
+    font-size: var(--size-xsm);
+    font-weight: 400;
+    color: white;
+}

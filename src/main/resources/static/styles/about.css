@@ -110,13 +110,13 @@
 }
 
 
-.about-common-section{
+.common-section{
     position: relative;
 
     padding: 0;
     border-bottom: 1px solid var(--grey200);
 }
-.about-common-section > .header{
+.common-section > .header{
     position: relative;
     height: 100%;
     width: 100%;
@@ -133,7 +133,7 @@
 }
 
 
-.about-common-section > .header::before {
+.common-section > .header::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -141,18 +141,18 @@
     z-index: 1;
 }
 
-.about-common-section > .header > * {
+.common-section > .header > * {
     z-index: 2;
     position: relative;
     color: var(--white200);
 }
-.about-common-section > .header > img{
+.common-section > .header > img{
     filter: brightness(80%);
 }
-.about-common-section > .header > h1{
+.common-section > .header > h1{
     font-size: var(--size-xl);
 }
-.about-common-section > .header > h3{
+.common-section > .header > h3{
     font-weight: 400;
     font-size: var(--size-m);
 }
