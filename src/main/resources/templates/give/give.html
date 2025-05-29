@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>give</title>
+  <link rel="stylesheet" th:href="@{/styles/main.css}">
+  <link rel="stylesheet" th:href="@{/styles/give.css}">
+  <link rel="stylesheet" th:href="@{/styles/about.css}">
+  <link rel="stylesheet" th:href="@{/styles/card.css}">
+  <link rel="stylesheet" th:href="@{/assets/fontawesome-free-6.7.2-web/css/all.min.css}">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<!-- Include Navbar -->
+<div th:replace="~{loginform :: loginForm}"></div>
+<div th:replace="~{sidenav :: sidenavigation}"></div>
+<div class="root">
+  <nav th:replace="~{navigation :: navbar}"></nav>
+  <div th:replace="~{socials_floate ::social-floating-ctn}"></div>
+  <section class="give-section">
+    <div class="header">
+      <h1 >Church Give</h1>
+      <h3 >Join us in worship and fellowship</h3>
+    </div>
+    <div class="wave-container">
+      <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#ffffff" fill-opacity="1" d="M0,160
+                C 360,80 1080,240 1440,160
+                L1440,320
+                L0,320
+                Z" />
+      </svg>
+    </div>
+  </section>
+  <section class="give-donation-box">
+      <div class="header">
+          <h2>Give Generously</h2>
+           <p>Your generous donations make it possible for Bible Baptist Ekklesia of Kawit to continue its mission of spreading the Gospel, serving our community, and helping those in need. Every gift, no matter the size, makes a difference.</p>
+      </div>
+
+    <div class="give-action">
+       <button class="active">Give Online</button>
+       <button>Other Ways to Give</button>
+    </div>
+    <div class="give-form">
+      <div class="give-type">
+        <h3>Select Donation Type:</h3>
+        <input type="radio"  id="tithe" name="fav_language" value="Tithe">
+        <label for="tithe">Tithe</label><br>
+        <input type="radio" id="offering" name="fav_language" value="Offering">
+        <label for="offering">Offering</label><br>
+        <input type="radio" id="building_fund" name="fav_language" value="Building Fund">
+        <label for="building_fund">Building Fund</label><br>
+        <input type="radio" id="missions" name="fav_language" value="Missions">
+        <label for="missions">Missions</label>
+      </div>
+      <div class="give-amount">
+        <h3>Select Amount</h3>
+        <div class="amount">
+          <button>&#8369; 50</button>
+          <button>&#8369; 100</button>
+          <button>&#8369; 500</button>
+          <button>&#8369; 1000</button>
+        </div>
+      </div>
+
+      <div class="custom-amount">
+        <button>Custom</button>
+        <input type="number" placeholder="Enter Amount">
+      </div>
+      <div class="give-frequency">
+        <h3>Frequency</h3><br>
+        <select id="frequency" name="frequency">
+          <option value="one-time">One time</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+      </div>
+      <div class="give-note">
+        <div>
+          <i class="fa-solid fa-question"></i>
+        </div>
+
+        <span>Your donation will be securely processed through PayPal. You don't need a PayPal account to donate - you can use any major credit or debit card.</span>
+      </div>
+      <button><i class="fa-regular fa-heart"></i><span>Donate Now with Paypal</span></button>
+    </div>
+
+    <div class="other-option-wrapper">
+      <div>
+        <i class="fa-solid fa-dollar-sign"></i>
+        <h3>Give in Person</h3>
+        <p>You can give during any of our worship services by placing your donation in the offering box.</p>
+        <div class="give-highlight">
+          <span>Sunday Services: 9:00 AM - 11:00 AM</span>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-credit-card"></i>
+        <h3>Bank Transfer</h3>
+        <p>You can send your donation directly to our church bank account.</p>
+        <div class="give-highlight">
+          <span>Bank: Example Bank</span>
+        </div>
+        <div class="give-highlight">
+          <span>Account Name: Bible Baptist Ekklesia of Kawit</span>
+        </div>
+        <div class="give-highlight">
+          <span>Account Number: 1234-5678-9012-3456</span>
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <i class="fa-solid fa-calendar"></i>
+      <div>
+        <h3>
+          Scheduled Giving
+        </h3>
+        <p>If you'd like to set up regular, scheduled giving, please contact our church office for assistance. We can help you establish a consistent giving plan that works for you.</p>
+      </div>
+    </div>
+
+  </section>
+
+ <section class="why-give-section">
+   <h2>Why We Give</h2>
+    <div class="give-wrap">
+       <div class="give-statement">
+          <h3>Biblical Stewardship</h3>
+         <p>The Bible teaches us that everything we have comes from God, and we are called to be good stewards of these blessings. Giving is an act of worship and a demonstration of our trust in God's provision.</p>
+       </div>
+
+      <div class="give-statement">
+        <h3>Supporting Ministry</h3>
+        <p>Your donations help fund our church's various ministries, from worship services and Bible studies to community outreach and missions. They also support our pastors and staff who serve our church.</p>
+      </div>
+
+      <div class="give-statement">
+        <h3>Making a Difference</h3>
+        <p>Through your generosity, we're able to extend God's love beyond our walls, feeding the hungry, caring for those in need, and sharing the Gospel in our community and around the world.</p>
+      </div>
+
+      <hr>
+      <blockquote>
+        "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." — 2 Corinthians 9:7
+      </blockquote>
+
+    </div>
+
+ </section>
+
+  <section th:replace="~{footer :: footer-section}"></section>
+</div>
+<script src="/js/main.js"></script>
+<script th:src="@{assets/js/jquery.min.js}"></script>
+</body>
+</html>

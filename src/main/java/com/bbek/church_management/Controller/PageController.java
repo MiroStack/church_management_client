@@ -38,6 +38,11 @@ public class PageController {
         model.addAttribute("requestURI", request.getRequestURI());
         return "live/live"; // maps to templates/a.html
     }
+    @GetMapping("/give")
+    public String give(HttpServletRequest request, Model model) {
+        model.addAttribute("requestURI", request.getRequestURI());
+        return "give/give"; // maps to templates/a.html
+    }
     @GetMapping("/member")
     public String member(HttpServletRequest request, Model model) {
         model.addAttribute("requestURI", request.getRequestURI());

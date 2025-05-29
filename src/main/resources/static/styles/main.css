@@ -3,7 +3,7 @@
     --black200:#0e0e0e;
     --white200: #f4f4f4;
     --white500:#FFFFFF;
-    --lightgrey100: #F1F1F1;
+    --lightgrey100: #f1f5f9;
     --lightgrey200: #dfdede;
     --primary: #0F1626;
     --secondary: #080813;
@@ -12,6 +12,7 @@
     --blue200: #1974d3;
     --skyblue: #5a98d8;
     --lightblue: #a0c5f1;
+    --lightblue200: #f1f1f1;
     --grey200: #aeadad;
     --grey500: #323131;
     --green200: #57ed88;
@@ -140,7 +141,6 @@
     -webkit-backdrop-filter: blur( 4px );
 }
 
-
 .nav-ctn{
     display: flex;
     align-items: center;
@@ -249,12 +249,24 @@ ul li a.links:hover{
     gap: 1em;
 }
 .socials-ctn{
+    width: 3em;
+    position: fixed;
+    top: 50%;
+    right: 2em;
+    padding: 1em;
+    transform: translateY(-50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
+    z-index: 5000;
+    background-color: var(--blue200);
+    color: var(--white200);
+    border-radius: 1em;
 
 }
+
 .socials-footer{
     display: flex;
     align-items: center;
@@ -731,7 +743,7 @@ ul.quick-list > li > a:hover{
     .brand {
         justify-content: start;
     }
-    .nav-list, .socials-ctn, .login-btn {
+    .nav-list, .login-btn {
         display: none;
     }
     section {
@@ -804,8 +816,6 @@ ul.quick-list > li > a:hover{
     .copyright-wrap > p{
         font-size: var(--size-xsm);
     }
-
-
 }
 
 /* Devices between 600px and 849px (portrait tablets & large phones) */
@@ -816,7 +826,7 @@ ul.quick-list > li > a:hover{
     .brand {
         justify-content: start;
     }
-    .nav-list, .socials-ctn, .login-btn {
+    .nav-list, .login-btn {
         display: none;
     }
     section {
@@ -885,7 +895,6 @@ ul.quick-list > li > a:hover{
 @media only screen and (min-width: 1200px) and (max-width: 1600px){
     .mynav {
         padding: 0 10em;
-
     }
 
 
